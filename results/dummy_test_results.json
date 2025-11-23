@@ -1,0 +1,52 @@
+{
+  "config": {
+    "pruning_rate": 0.2,
+    "num_rounds": 1,
+    "training_iterations": 2000,
+    "learning_rate": 0.0012,
+    "batch_size": 60,
+    "device": "cuda"
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "sparsity_before_pruning": 0.0,
+      "remaining_pct_before_pruning": 100.0,
+      "best_val_loss": 0.0915572382676016,
+      "best_val_iteration": 2751,
+      "early_stop_val_acc": 97.06,
+      "final_test_acc": 97.39,
+      "training_time": 34.289430141448975,
+      "history": {
+        "train_loss": [
+          0.21055354969626783,
+          0.09251620615791883,
+          0.0686855298822955
+        ],
+        "train_acc": [
+          93.54363636363637,
+          97.14727272727272,
+          97.82
+        ],
+        "val_loss": [
+          0.1137665252955187,
+          0.11381600666347713,
+          0.0915572382676016
+        ],
+        "val_acc": [
+          96.26,
+          96.68,
+          97.06
+        ],
+        "test_acc": [
+          97.39
+        ],
+        "iteration": [
+          917,
+          1834,
+          2751
+        ]
+      }
+    }
+  ]
+}
