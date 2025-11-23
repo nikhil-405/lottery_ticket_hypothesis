@@ -44,8 +44,10 @@ class PruningManager:
         with torch.no_grad():
             for name, param in self.model.named_parameters():
                 if name in self.masks:
-                    param.data *= self.masks[name]
-    
+                    # Move mask to same device as parameter
+                    mask = self.masks[name].to(param.device)
+                    param.data *= mask
+
     def prune_by_magnitude(self, pruning_rate, layer_wise=True):
         """
         Prune weights by magnitude
@@ -53,7 +55,7 @@ class PruningManager:
         Args:
             pruning_rate: Fraction of remaining weights to prune (e.g., 0.2 = 20%)
             layer_wise: If True, prune each layer independently
-                       If False, prune globally across all layers
+                    If False, prune globally across all layers
         
         Returns:
             Current sparsity percentage
@@ -66,8 +68,12 @@ class PruningManager:
                 # Prune each layer separately
                 for name, param in self.model.named_parameters():
                     if name in self.masks:
+                        # Ensure mask is on same device as parameter
+                        device = param.device
+                        mask = self.masks[name].to(device)
+                        
                         # Get currently active (non-zero) weights
-                        active_weights = param.data[self.masks[name] == 1]
+                        active_weights = param.data[mask == 1]
                         
                         if len(active_weights) == 0:
                             continue
@@ -87,14 +93,15 @@ class PruningManager:
                             new_mask = (param.data.abs() > threshold).float()
                             
                             # Combine with existing mask (once pruned, stays pruned)
-                            self.masks[name] = torch.min(self.masks[name], new_mask)
+                            self.masks[name] = torch.min(mask, new_mask).cpu()  # Store on CPU
             
             else:
                 # Global pruning across all layers
                 all_weights = []
                 for name, param in self.model.named_parameters():
                     if name in self.masks:
-                        active_weights = param.data[self.masks[name] == 1]
+                        mask = self.masks[name].to(param.device)
+                        active_weights = param.data[mask == 1]
                         all_weights.append(active_weights.flatten())
                 
                 # Concatenate all active weights
@@ -114,15 +121,16 @@ class PruningManager:
                     for name, param in self.model.named_parameters():
                         if name in self.masks:
                             new_mask = (param.data.abs() > threshold).float()
-                            self.masks[name] = torch.min(self.masks[name], new_mask)
+                            mask = self.masks[name].to(param.device)
+                            self.masks[name] = torch.min(mask, new_mask).cpu()  # Store on CPU
             
             # Apply masks
             self.apply_masks()
         
         # Calculate and return current sparsity
         sparsity = self.get_sparsity()
-        return sparsity
-    
+        return sparsity   
+     
     def reset_to_initial_weights(self):
         """
         Reset remaining (non-pruned) weights to their initial values (θ₀)
@@ -132,14 +140,17 @@ class PruningManager:
             raise ValueError("Initial weights not saved! Call save_initial_weights() first.")
         
         with torch.no_grad():
+            # Get the device of the first model parameter
+            device = next(self.model.parameters()).device
+            
             # Load initial weights
-            self.model.load_state_dict(self.initial_state)
+            initial_state_device = {k: v.to(device) for k, v in self.initial_state.items()}
+            self.model.load_state_dict(initial_state_device)
             
             # Re-apply masks (zero out pruned weights)
             self.apply_masks()
-        
-        print("✓ Weights reset to initial values (with current mask applied)")
     
+    print("✓ Weights reset to initial values (with current mask applied)")   
     def get_sparsity(self):
         """Calculate current sparsity percentage"""
         total_params = 0
