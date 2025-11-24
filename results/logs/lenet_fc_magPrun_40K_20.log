@@ -1,0 +1,3851 @@
+Initializing model...
+✓ Initial weights saved
+✓ Initialized masks for 3 weight tensors
+
+======================================================================
+ROUND 1/15
+======================================================================
+Starting sparsity: 0.00% (100.00% weights remaining)
+
+============================================================
+Training Configuration:
+  Total iterations: 40,000
+  Epochs: 44
+  Learning rate: 0.0012
+  Optimizer: Adam
+  Device: cuda
+  Parameters: 266,610
+  Non-zero parameters: 266,200
+  Sparsity: 0.15%
+============================================================
+
+
+Epoch 1/44
+  Train Loss: 0.2098 | Train Acc: 93.57%
+  Val Loss: 0.1304 | Val Acc: 95.96%
+  Best Val Loss: 0.1304 at iteration 917
+
+Epoch 2/44
+  Train Loss: 0.0928 | Train Acc: 97.08%
+  Val Loss: 0.1151 | Val Acc: 96.76%
+  Best Val Loss: 0.1151 at iteration 1834
+
+Epoch 3/44
+  Train Loss: 0.0666 | Train Acc: 97.95%
+  Val Loss: 0.1046 | Val Acc: 96.62%
+  Best Val Loss: 0.1046 at iteration 2751
+
+Epoch 4/44
+  Train Loss: 0.0544 | Train Acc: 98.25%
+  Val Loss: 0.0920 | Val Acc: 97.22%
+  Best Val Loss: 0.0920 at iteration 3668
+
+Epoch 5/44
+  Train Loss: 0.0420 | Train Acc: 98.64%
+  Val Loss: 0.0911 | Val Acc: 97.44%
+  Best Val Loss: 0.0911 at iteration 4585
+
+Epoch 6/44
+  Train Loss: 0.0366 | Train Acc: 98.77%
+  Val Loss: 0.0964 | Val Acc: 97.44%
+  Best Val Loss: 0.0911 at iteration 4585
+
+Epoch 7/44
+  Train Loss: 0.0317 | Train Acc: 98.96%
+  Val Loss: 0.0856 | Val Acc: 97.54%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 8/44
+  Train Loss: 0.0296 | Train Acc: 99.07%
+  Val Loss: 0.0921 | Val Acc: 97.48%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 9/44
+  Train Loss: 0.0284 | Train Acc: 99.03%
+  Val Loss: 0.0881 | Val Acc: 97.72%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 10/44
+  Train Loss: 0.0250 | Train Acc: 99.17%
+  Val Loss: 0.0933 | Val Acc: 97.68%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 11/44
+  Train Loss: 0.0189 | Train Acc: 99.37%
+  Val Loss: 0.1041 | Val Acc: 97.72%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 12/44
+  Train Loss: 0.0239 | Train Acc: 99.23%
+  Val Loss: 0.0958 | Val Acc: 97.50%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 13/44
+  Train Loss: 0.0187 | Train Acc: 99.44%
+  Val Loss: 0.1071 | Val Acc: 97.68%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 14/44
+  Train Loss: 0.0181 | Train Acc: 99.41%
+  Val Loss: 0.1011 | Val Acc: 98.02%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 15/44
+  Train Loss: 0.0171 | Train Acc: 99.46%
+  Val Loss: 0.1389 | Val Acc: 97.16%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 16/44
+  Train Loss: 0.0170 | Train Acc: 99.46%
+  Val Loss: 0.1038 | Val Acc: 97.98%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 17/44
+  Train Loss: 0.0131 | Train Acc: 99.55%
+  Val Loss: 0.1205 | Val Acc: 97.66%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 18/44
+  Train Loss: 0.0150 | Train Acc: 99.56%
+  Val Loss: 0.1139 | Val Acc: 97.84%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 19/44
+  Train Loss: 0.0186 | Train Acc: 99.42%
+  Val Loss: 0.1329 | Val Acc: 97.82%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 20/44
+  Train Loss: 0.0122 | Train Acc: 99.62%
+  Val Loss: 0.1134 | Val Acc: 98.00%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 21/44
+  Train Loss: 0.0124 | Train Acc: 99.64%
+  Val Loss: 0.1135 | Val Acc: 97.88%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 22/44
+  Train Loss: 0.0165 | Train Acc: 99.50%
+  Val Loss: 0.1227 | Val Acc: 97.74%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 23/44
+  Train Loss: 0.0125 | Train Acc: 99.62%
+  Val Loss: 0.1112 | Val Acc: 97.92%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 24/44
+  Train Loss: 0.0117 | Train Acc: 99.64%
+  Val Loss: 0.1409 | Val Acc: 97.80%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 25/44
+  Train Loss: 0.0135 | Train Acc: 99.61%
+  Val Loss: 0.1202 | Val Acc: 97.96%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 26/44
+  Train Loss: 0.0123 | Train Acc: 99.65%
+  Val Loss: 0.1528 | Val Acc: 97.64%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 27/44
+  Train Loss: 0.0106 | Train Acc: 99.69%
+  Val Loss: 0.1486 | Val Acc: 98.04%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 28/44
+  Train Loss: 0.0148 | Train Acc: 99.63%
+  Val Loss: 0.1337 | Val Acc: 98.06%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 29/44
+  Train Loss: 0.0104 | Train Acc: 99.73%
+  Val Loss: 0.1667 | Val Acc: 97.88%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 30/44
+  Train Loss: 0.0090 | Train Acc: 99.74%
+  Val Loss: 0.1385 | Val Acc: 98.02%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 31/44
+  Train Loss: 0.0155 | Train Acc: 99.57%
+  Val Loss: 0.1296 | Val Acc: 98.08%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 32/44
+  Train Loss: 0.0154 | Train Acc: 99.62%
+  Val Loss: 0.1587 | Val Acc: 97.90%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 33/44
+  Train Loss: 0.0109 | Train Acc: 99.72%
+  Val Loss: 0.1911 | Val Acc: 97.56%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 34/44
+  Train Loss: 0.0092 | Train Acc: 99.75%
+  Val Loss: 0.1585 | Val Acc: 97.94%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 35/44
+  Train Loss: 0.0145 | Train Acc: 99.63%
+  Val Loss: 0.1708 | Val Acc: 97.94%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 36/44
+  Train Loss: 0.0101 | Train Acc: 99.74%
+  Val Loss: 0.1704 | Val Acc: 97.80%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 37/44
+  Train Loss: 0.0100 | Train Acc: 99.74%
+  Val Loss: 0.1774 | Val Acc: 97.50%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 38/44
+  Train Loss: 0.0095 | Train Acc: 99.75%
+  Val Loss: 0.1872 | Val Acc: 98.06%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 39/44
+  Train Loss: 0.0120 | Train Acc: 99.68%
+  Val Loss: 0.1891 | Val Acc: 97.72%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 40/44
+  Train Loss: 0.0079 | Train Acc: 99.77%
+  Val Loss: 0.1855 | Val Acc: 97.94%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 41/44
+  Train Loss: 0.0097 | Train Acc: 99.73%
+  Val Loss: 0.2143 | Val Acc: 97.38%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 42/44
+  Train Loss: 0.0090 | Train Acc: 99.77%
+  Val Loss: 0.2292 | Val Acc: 97.76%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 43/44
+  Train Loss: 0.0140 | Train Acc: 99.67%
+  Val Loss: 0.1749 | Val Acc: 98.08%
+  Best Val Loss: 0.0856 at iteration 6419
+
+Epoch 44/44
+  Train Loss: 0.0081 | Train Acc: 99.81%
+  Val Loss: 0.1845 | Val Acc: 98.08%
+  Best Val Loss: 0.0856 at iteration 6419
+
+============================================================
+Training Complete!
+  Final Test Accuracy: 98.03%
+  Best Validation Loss: 0.0856 at iteration 6419
+============================================================
+
+
+Round 1 Results:
+  Early-stop iteration: 6,419
+  Early-stop val accuracy: 97.54%
+  Final test accuracy: 98.03%
+  Training time: 391.6s
+
+Pruning 20.0% of remaining weights...
+New sparsity: 20.00% (80.00% remaining)
+✓ Weights reset to initial values (with current mask applied)
+
+======================================================================
+ROUND 2/15
+======================================================================
+Starting sparsity: 20.00% (80.00% weights remaining)
+
+============================================================
+Training Configuration:
+  Total iterations: 40,000
+  Epochs: 44
+  Learning rate: 0.0012
+  Optimizer: Adam
+  Device: cuda
+  Parameters: 266,610
+  Non-zero parameters: 212,960
+  Sparsity: 20.12%
+============================================================
+
+
+Epoch 1/44
+  Train Loss: 0.1957 | Train Acc: 94.04%
+  Val Loss: 0.1258 | Val Acc: 95.98%
+  Best Val Loss: 0.1258 at iteration 917
+
+Epoch 2/44
+  Train Loss: 0.0901 | Train Acc: 97.19%
+  Val Loss: 0.1192 | Val Acc: 96.54%
+  Best Val Loss: 0.1192 at iteration 1834
+
+Epoch 3/44
+  Train Loss: 0.0654 | Train Acc: 97.90%
+  Val Loss: 0.0998 | Val Acc: 96.98%
+  Best Val Loss: 0.0998 at iteration 2751
+
+Epoch 4/44
+  Train Loss: 0.0496 | Train Acc: 98.36%
+  Val Loss: 0.0794 | Val Acc: 97.62%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 5/44
+  Train Loss: 0.0439 | Train Acc: 98.57%
+  Val Loss: 0.0945 | Val Acc: 97.44%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 6/44
+  Train Loss: 0.0370 | Train Acc: 98.78%
+  Val Loss: 0.1051 | Val Acc: 97.36%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 7/44
+  Train Loss: 0.0319 | Train Acc: 98.97%
+  Val Loss: 0.0874 | Val Acc: 97.64%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 8/44
+  Train Loss: 0.0273 | Train Acc: 99.11%
+  Val Loss: 0.0936 | Val Acc: 97.94%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 9/44
+  Train Loss: 0.0280 | Train Acc: 99.12%
+  Val Loss: 0.1216 | Val Acc: 97.34%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 10/44
+  Train Loss: 0.0232 | Train Acc: 99.25%
+  Val Loss: 0.1203 | Val Acc: 97.46%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 11/44
+  Train Loss: 0.0228 | Train Acc: 99.23%
+  Val Loss: 0.1263 | Val Acc: 97.48%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 12/44
+  Train Loss: 0.0194 | Train Acc: 99.33%
+  Val Loss: 0.1418 | Val Acc: 97.50%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 13/44
+  Train Loss: 0.0186 | Train Acc: 99.40%
+  Val Loss: 0.1333 | Val Acc: 97.72%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 14/44
+  Train Loss: 0.0193 | Train Acc: 99.35%
+  Val Loss: 0.1328 | Val Acc: 97.60%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 15/44
+  Train Loss: 0.0179 | Train Acc: 99.45%
+  Val Loss: 0.1261 | Val Acc: 97.54%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 16/44
+  Train Loss: 0.0174 | Train Acc: 99.48%
+  Val Loss: 0.1231 | Val Acc: 97.86%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 17/44
+  Train Loss: 0.0146 | Train Acc: 99.55%
+  Val Loss: 0.1240 | Val Acc: 97.58%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 18/44
+  Train Loss: 0.0164 | Train Acc: 99.49%
+  Val Loss: 0.1229 | Val Acc: 97.90%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 19/44
+  Train Loss: 0.0143 | Train Acc: 99.55%
+  Val Loss: 0.1304 | Val Acc: 97.78%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 20/44
+  Train Loss: 0.0153 | Train Acc: 99.54%
+  Val Loss: 0.1812 | Val Acc: 97.48%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 21/44
+  Train Loss: 0.0159 | Train Acc: 99.53%
+  Val Loss: 0.1752 | Val Acc: 97.28%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 22/44
+  Train Loss: 0.0115 | Train Acc: 99.62%
+  Val Loss: 0.1392 | Val Acc: 97.94%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 23/44
+  Train Loss: 0.0142 | Train Acc: 99.59%
+  Val Loss: 0.1635 | Val Acc: 97.88%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 24/44
+  Train Loss: 0.0149 | Train Acc: 99.56%
+  Val Loss: 0.1324 | Val Acc: 97.82%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 25/44
+  Train Loss: 0.0126 | Train Acc: 99.64%
+  Val Loss: 0.1551 | Val Acc: 97.68%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 26/44
+  Train Loss: 0.0154 | Train Acc: 99.59%
+  Val Loss: 0.1368 | Val Acc: 97.92%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 27/44
+  Train Loss: 0.0110 | Train Acc: 99.66%
+  Val Loss: 0.1505 | Val Acc: 97.76%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 28/44
+  Train Loss: 0.0076 | Train Acc: 99.77%
+  Val Loss: 0.1377 | Val Acc: 97.96%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 29/44
+  Train Loss: 0.0160 | Train Acc: 99.56%
+  Val Loss: 0.1575 | Val Acc: 97.82%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 30/44
+  Train Loss: 0.0139 | Train Acc: 99.64%
+  Val Loss: 0.1585 | Val Acc: 98.04%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 31/44
+  Train Loss: 0.0090 | Train Acc: 99.78%
+  Val Loss: 0.1785 | Val Acc: 97.70%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 32/44
+  Train Loss: 0.0124 | Train Acc: 99.68%
+  Val Loss: 0.1901 | Val Acc: 97.68%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 33/44
+  Train Loss: 0.0093 | Train Acc: 99.75%
+  Val Loss: 0.1959 | Val Acc: 97.86%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 34/44
+  Train Loss: 0.0138 | Train Acc: 99.63%
+  Val Loss: 0.1622 | Val Acc: 97.76%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 35/44
+  Train Loss: 0.0103 | Train Acc: 99.73%
+  Val Loss: 0.1610 | Val Acc: 97.96%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 36/44
+  Train Loss: 0.0119 | Train Acc: 99.73%
+  Val Loss: 0.2015 | Val Acc: 97.56%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 37/44
+  Train Loss: 0.0116 | Train Acc: 99.69%
+  Val Loss: 0.1740 | Val Acc: 97.98%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 38/44
+  Train Loss: 0.0085 | Train Acc: 99.75%
+  Val Loss: 0.1443 | Val Acc: 98.08%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 39/44
+  Train Loss: 0.0091 | Train Acc: 99.74%
+  Val Loss: 0.2113 | Val Acc: 97.60%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 40/44
+  Train Loss: 0.0132 | Train Acc: 99.67%
+  Val Loss: 0.1993 | Val Acc: 97.88%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 41/44
+  Train Loss: 0.0072 | Train Acc: 99.84%
+  Val Loss: 0.1941 | Val Acc: 97.84%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 42/44
+  Train Loss: 0.0080 | Train Acc: 99.80%
+  Val Loss: 0.2458 | Val Acc: 97.56%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 43/44
+  Train Loss: 0.0149 | Train Acc: 99.65%
+  Val Loss: 0.2324 | Val Acc: 97.76%
+  Best Val Loss: 0.0794 at iteration 3668
+
+Epoch 44/44
+  Train Loss: 0.0077 | Train Acc: 99.79%
+  Val Loss: 0.2081 | Val Acc: 97.76%
+  Best Val Loss: 0.0794 at iteration 3668
+
+============================================================
+Training Complete!
+  Final Test Accuracy: 97.82%
+  Best Validation Loss: 0.0794 at iteration 3668
+============================================================
+
+
+Round 2 Results:
+  Early-stop iteration: 3,668
+  Early-stop val accuracy: 97.62%
+  Final test accuracy: 97.82%
+  Training time: 387.4s
+
+Pruning 20.0% of remaining weights...
+New sparsity: 36.00% (64.00% remaining)
+✓ Weights reset to initial values (with current mask applied)
+
+======================================================================
+ROUND 3/15
+======================================================================
+Starting sparsity: 36.00% (64.00% weights remaining)
+
+============================================================
+Training Configuration:
+  Total iterations: 40,000
+  Epochs: 44
+  Learning rate: 0.0012
+  Optimizer: Adam
+  Device: cuda
+  Parameters: 266,610
+  Non-zero parameters: 170,368
+  Sparsity: 36.10%
+============================================================
+
+
+Epoch 1/44
+  Train Loss: 0.1918 | Train Acc: 94.23%
+  Val Loss: 0.1451 | Val Acc: 95.20%
+  Best Val Loss: 0.1451 at iteration 917
+
+Epoch 2/44
+  Train Loss: 0.0857 | Train Acc: 97.36%
+  Val Loss: 0.0979 | Val Acc: 96.74%
+  Best Val Loss: 0.0979 at iteration 1834
+
+Epoch 3/44
+  Train Loss: 0.0635 | Train Acc: 97.93%
+  Val Loss: 0.0929 | Val Acc: 97.38%
+  Best Val Loss: 0.0929 at iteration 2751
+
+Epoch 4/44
+  Train Loss: 0.0507 | Train Acc: 98.37%
+  Val Loss: 0.0894 | Val Acc: 97.28%
+  Best Val Loss: 0.0894 at iteration 3668
+
+Epoch 5/44
+  Train Loss: 0.0378 | Train Acc: 98.70%
+  Val Loss: 0.0735 | Val Acc: 98.02%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 6/44
+  Train Loss: 0.0362 | Train Acc: 98.83%
+  Val Loss: 0.0919 | Val Acc: 97.66%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 7/44
+  Train Loss: 0.0301 | Train Acc: 99.01%
+  Val Loss: 0.1181 | Val Acc: 97.00%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 8/44
+  Train Loss: 0.0258 | Train Acc: 99.15%
+  Val Loss: 0.0965 | Val Acc: 97.74%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 9/44
+  Train Loss: 0.0238 | Train Acc: 99.20%
+  Val Loss: 0.1251 | Val Acc: 97.38%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 10/44
+  Train Loss: 0.0228 | Train Acc: 99.26%
+  Val Loss: 0.1103 | Val Acc: 97.36%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 11/44
+  Train Loss: 0.0223 | Train Acc: 99.29%
+  Val Loss: 0.1194 | Val Acc: 97.32%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 12/44
+  Train Loss: 0.0206 | Train Acc: 99.30%
+  Val Loss: 0.1105 | Val Acc: 97.50%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 13/44
+  Train Loss: 0.0181 | Train Acc: 99.42%
+  Val Loss: 0.0955 | Val Acc: 97.80%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 14/44
+  Train Loss: 0.0118 | Train Acc: 99.60%
+  Val Loss: 0.1031 | Val Acc: 97.92%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 15/44
+  Train Loss: 0.0186 | Train Acc: 99.40%
+  Val Loss: 0.1479 | Val Acc: 97.24%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 16/44
+  Train Loss: 0.0173 | Train Acc: 99.45%
+  Val Loss: 0.1309 | Val Acc: 97.78%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 17/44
+  Train Loss: 0.0194 | Train Acc: 99.42%
+  Val Loss: 0.1259 | Val Acc: 97.90%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 18/44
+  Train Loss: 0.0148 | Train Acc: 99.54%
+  Val Loss: 0.1315 | Val Acc: 97.66%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 19/44
+  Train Loss: 0.0128 | Train Acc: 99.60%
+  Val Loss: 0.1643 | Val Acc: 97.52%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 20/44
+  Train Loss: 0.0138 | Train Acc: 99.53%
+  Val Loss: 0.1586 | Val Acc: 97.54%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 21/44
+  Train Loss: 0.0144 | Train Acc: 99.55%
+  Val Loss: 0.1590 | Val Acc: 97.60%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 22/44
+  Train Loss: 0.0112 | Train Acc: 99.69%
+  Val Loss: 0.1359 | Val Acc: 97.78%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 23/44
+  Train Loss: 0.0145 | Train Acc: 99.55%
+  Val Loss: 0.1174 | Val Acc: 97.96%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 24/44
+  Train Loss: 0.0116 | Train Acc: 99.68%
+  Val Loss: 0.1806 | Val Acc: 97.30%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 25/44
+  Train Loss: 0.0104 | Train Acc: 99.73%
+  Val Loss: 0.1542 | Val Acc: 97.90%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 26/44
+  Train Loss: 0.0145 | Train Acc: 99.59%
+  Val Loss: 0.1727 | Val Acc: 97.60%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 27/44
+  Train Loss: 0.0138 | Train Acc: 99.63%
+  Val Loss: 0.1432 | Val Acc: 97.94%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 28/44
+  Train Loss: 0.0106 | Train Acc: 99.69%
+  Val Loss: 0.1544 | Val Acc: 98.06%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 29/44
+  Train Loss: 0.0104 | Train Acc: 99.70%
+  Val Loss: 0.1552 | Val Acc: 97.96%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 30/44
+  Train Loss: 0.0109 | Train Acc: 99.68%
+  Val Loss: 0.1351 | Val Acc: 98.14%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 31/44
+  Train Loss: 0.0102 | Train Acc: 99.69%
+  Val Loss: 0.1523 | Val Acc: 97.94%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 32/44
+  Train Loss: 0.0134 | Train Acc: 99.64%
+  Val Loss: 0.1272 | Val Acc: 97.94%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 33/44
+  Train Loss: 0.0102 | Train Acc: 99.72%
+  Val Loss: 0.2037 | Val Acc: 97.58%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 34/44
+  Train Loss: 0.0123 | Train Acc: 99.69%
+  Val Loss: 0.1476 | Val Acc: 98.08%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 35/44
+  Train Loss: 0.0077 | Train Acc: 99.78%
+  Val Loss: 0.1411 | Val Acc: 97.94%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 36/44
+  Train Loss: 0.0100 | Train Acc: 99.74%
+  Val Loss: 0.1939 | Val Acc: 97.74%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 37/44
+  Train Loss: 0.0132 | Train Acc: 99.67%
+  Val Loss: 0.1889 | Val Acc: 97.76%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 38/44
+  Train Loss: 0.0100 | Train Acc: 99.73%
+  Val Loss: 0.2352 | Val Acc: 97.62%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 39/44
+  Train Loss: 0.0096 | Train Acc: 99.76%
+  Val Loss: 0.2117 | Val Acc: 97.54%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 40/44
+  Train Loss: 0.0143 | Train Acc: 99.70%
+  Val Loss: 0.1972 | Val Acc: 97.70%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 41/44
+  Train Loss: 0.0078 | Train Acc: 99.79%
+  Val Loss: 0.1879 | Val Acc: 97.60%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 42/44
+  Train Loss: 0.0075 | Train Acc: 99.79%
+  Val Loss: 0.2372 | Val Acc: 97.64%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 43/44
+  Train Loss: 0.0123 | Train Acc: 99.72%
+  Val Loss: 0.1919 | Val Acc: 97.68%
+  Best Val Loss: 0.0735 at iteration 4585
+
+Epoch 44/44
+  Train Loss: 0.0064 | Train Acc: 99.84%
+  Val Loss: 0.1728 | Val Acc: 98.00%
+  Best Val Loss: 0.0735 at iteration 4585
+
+============================================================
+Training Complete!
+  Final Test Accuracy: 98.25%
+  Best Validation Loss: 0.0735 at iteration 4585
+============================================================
+
+
+Round 3 Results:
+  Early-stop iteration: 4,585
+  Early-stop val accuracy: 98.02%
+  Final test accuracy: 98.25%
+  Training time: 385.8s
+
+Pruning 20.0% of remaining weights...
+New sparsity: 48.80% (51.20% remaining)
+✓ Weights reset to initial values (with current mask applied)
+
+======================================================================
+ROUND 4/15
+======================================================================
+Starting sparsity: 48.80% (51.20% weights remaining)
+
+============================================================
+Training Configuration:
+  Total iterations: 40,000
+  Epochs: 44
+  Learning rate: 0.0012
+  Optimizer: Adam
+  Device: cuda
+  Parameters: 266,610
+  Non-zero parameters: 136,295
+  Sparsity: 48.88%
+============================================================
+
+
+Epoch 1/44
+  Train Loss: 0.1906 | Train Acc: 94.17%
+  Val Loss: 0.1450 | Val Acc: 95.62%
+  Best Val Loss: 0.1450 at iteration 917
+
+Epoch 2/44
+  Train Loss: 0.0864 | Train Acc: 97.36%
+  Val Loss: 0.1007 | Val Acc: 97.08%
+  Best Val Loss: 0.1007 at iteration 1834
+
+Epoch 3/44
+  Train Loss: 0.0606 | Train Acc: 98.05%
+  Val Loss: 0.1016 | Val Acc: 97.10%
+  Best Val Loss: 0.1007 at iteration 1834
+
+Epoch 4/44
+  Train Loss: 0.0495 | Train Acc: 98.39%
+  Val Loss: 0.0875 | Val Acc: 97.24%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 5/44
+  Train Loss: 0.0425 | Train Acc: 98.59%
+  Val Loss: 0.0936 | Val Acc: 97.34%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 6/44
+  Train Loss: 0.0349 | Train Acc: 98.83%
+  Val Loss: 0.0906 | Val Acc: 97.38%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 7/44
+  Train Loss: 0.0271 | Train Acc: 99.07%
+  Val Loss: 0.0909 | Val Acc: 97.46%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 8/44
+  Train Loss: 0.0285 | Train Acc: 99.07%
+  Val Loss: 0.1164 | Val Acc: 97.10%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 9/44
+  Train Loss: 0.0261 | Train Acc: 99.13%
+  Val Loss: 0.0909 | Val Acc: 97.62%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 10/44
+  Train Loss: 0.0218 | Train Acc: 99.28%
+  Val Loss: 0.0906 | Val Acc: 97.76%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 11/44
+  Train Loss: 0.0205 | Train Acc: 99.29%
+  Val Loss: 0.1157 | Val Acc: 97.68%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 12/44
+  Train Loss: 0.0189 | Train Acc: 99.37%
+  Val Loss: 0.1105 | Val Acc: 97.78%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 13/44
+  Train Loss: 0.0183 | Train Acc: 99.41%
+  Val Loss: 0.1188 | Val Acc: 97.70%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 14/44
+  Train Loss: 0.0199 | Train Acc: 99.39%
+  Val Loss: 0.1194 | Val Acc: 97.72%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 15/44
+  Train Loss: 0.0173 | Train Acc: 99.49%
+  Val Loss: 0.1065 | Val Acc: 98.06%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 16/44
+  Train Loss: 0.0145 | Train Acc: 99.53%
+  Val Loss: 0.1314 | Val Acc: 97.74%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 17/44
+  Train Loss: 0.0150 | Train Acc: 99.51%
+  Val Loss: 0.1183 | Val Acc: 98.06%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 18/44
+  Train Loss: 0.0153 | Train Acc: 99.51%
+  Val Loss: 0.0948 | Val Acc: 98.18%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 19/44
+  Train Loss: 0.0111 | Train Acc: 99.67%
+  Val Loss: 0.1494 | Val Acc: 97.68%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 20/44
+  Train Loss: 0.0179 | Train Acc: 99.48%
+  Val Loss: 0.1349 | Val Acc: 97.92%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 21/44
+  Train Loss: 0.0111 | Train Acc: 99.64%
+  Val Loss: 0.1313 | Val Acc: 97.92%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 22/44
+  Train Loss: 0.0109 | Train Acc: 99.66%
+  Val Loss: 0.1657 | Val Acc: 97.58%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 23/44
+  Train Loss: 0.0157 | Train Acc: 99.53%
+  Val Loss: 0.1340 | Val Acc: 97.82%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 24/44
+  Train Loss: 0.0119 | Train Acc: 99.66%
+  Val Loss: 0.1172 | Val Acc: 98.30%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 25/44
+  Train Loss: 0.0098 | Train Acc: 99.69%
+  Val Loss: 0.1493 | Val Acc: 97.66%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 26/44
+  Train Loss: 0.0118 | Train Acc: 99.63%
+  Val Loss: 0.1489 | Val Acc: 97.92%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 27/44
+  Train Loss: 0.0153 | Train Acc: 99.59%
+  Val Loss: 0.1332 | Val Acc: 98.00%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 28/44
+  Train Loss: 0.0119 | Train Acc: 99.70%
+  Val Loss: 0.1702 | Val Acc: 97.50%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 29/44
+  Train Loss: 0.0122 | Train Acc: 99.69%
+  Val Loss: 0.1257 | Val Acc: 98.20%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 30/44
+  Train Loss: 0.0130 | Train Acc: 99.62%
+  Val Loss: 0.1668 | Val Acc: 97.60%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 31/44
+  Train Loss: 0.0073 | Train Acc: 99.79%
+  Val Loss: 0.1417 | Val Acc: 98.16%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 32/44
+  Train Loss: 0.0114 | Train Acc: 99.71%
+  Val Loss: 0.1638 | Val Acc: 97.94%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 33/44
+  Train Loss: 0.0079 | Train Acc: 99.81%
+  Val Loss: 0.2000 | Val Acc: 97.56%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 34/44
+  Train Loss: 0.0130 | Train Acc: 99.65%
+  Val Loss: 0.1853 | Val Acc: 97.76%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 35/44
+  Train Loss: 0.0119 | Train Acc: 99.67%
+  Val Loss: 0.1590 | Val Acc: 98.06%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 36/44
+  Train Loss: 0.0093 | Train Acc: 99.76%
+  Val Loss: 0.1453 | Val Acc: 98.18%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 37/44
+  Train Loss: 0.0093 | Train Acc: 99.76%
+  Val Loss: 0.1926 | Val Acc: 97.94%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 38/44
+  Train Loss: 0.0126 | Train Acc: 99.67%
+  Val Loss: 0.1676 | Val Acc: 97.84%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 39/44
+  Train Loss: 0.0081 | Train Acc: 99.79%
+  Val Loss: 0.2077 | Val Acc: 97.92%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 40/44
+  Train Loss: 0.0093 | Train Acc: 99.77%
+  Val Loss: 0.2063 | Val Acc: 97.80%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 41/44
+  Train Loss: 0.0124 | Train Acc: 99.68%
+  Val Loss: 0.1660 | Val Acc: 98.00%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 42/44
+  Train Loss: 0.0062 | Train Acc: 99.85%
+  Val Loss: 0.2032 | Val Acc: 97.70%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 43/44
+  Train Loss: 0.0078 | Train Acc: 99.78%
+  Val Loss: 0.1648 | Val Acc: 98.24%
+  Best Val Loss: 0.0875 at iteration 3668
+
+Epoch 44/44
+  Train Loss: 0.0113 | Train Acc: 99.69%
+  Val Loss: 0.1953 | Val Acc: 97.76%
+  Best Val Loss: 0.0875 at iteration 3668
+
+============================================================
+Training Complete!
+  Final Test Accuracy: 97.64%
+  Best Validation Loss: 0.0875 at iteration 3668
+============================================================
+
+
+Round 4 Results:
+  Early-stop iteration: 3,668
+  Early-stop val accuracy: 97.24%
+  Final test accuracy: 97.64%
+  Training time: 387.3s
+
+Pruning 20.0% of remaining weights...
+New sparsity: 59.04% (40.96% remaining)
+✓ Weights reset to initial values (with current mask applied)
+
+======================================================================
+ROUND 5/15
+======================================================================
+Starting sparsity: 59.04% (40.96% weights remaining)
+
+============================================================
+Training Configuration:
+  Total iterations: 40,000
+  Epochs: 44
+  Learning rate: 0.0012
+  Optimizer: Adam
+  Device: cuda
+  Parameters: 266,610
+  Non-zero parameters: 109,037
+  Sparsity: 59.10%
+============================================================
+
+
+Epoch 1/44
+  Train Loss: 0.1931 | Train Acc: 94.09%
+  Val Loss: 0.1412 | Val Acc: 95.72%
+  Best Val Loss: 0.1412 at iteration 917
+
+Epoch 2/44
+  Train Loss: 0.0865 | Train Acc: 97.30%
+  Val Loss: 0.1043 | Val Acc: 96.74%
+  Best Val Loss: 0.1043 at iteration 1834
+
+Epoch 3/44
+  Train Loss: 0.0624 | Train Acc: 98.00%
+  Val Loss: 0.0904 | Val Acc: 97.36%
+  Best Val Loss: 0.0904 at iteration 2751
+
+Epoch 4/44
+  Train Loss: 0.0495 | Train Acc: 98.38%
+  Val Loss: 0.0883 | Val Acc: 97.40%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 5/44
+  Train Loss: 0.0385 | Train Acc: 98.78%
+  Val Loss: 0.1052 | Val Acc: 97.28%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 6/44
+  Train Loss: 0.0350 | Train Acc: 98.80%
+  Val Loss: 0.0988 | Val Acc: 97.12%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 7/44
+  Train Loss: 0.0307 | Train Acc: 99.00%
+  Val Loss: 0.1319 | Val Acc: 96.96%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 8/44
+  Train Loss: 0.0266 | Train Acc: 99.10%
+  Val Loss: 0.1344 | Val Acc: 97.18%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 9/44
+  Train Loss: 0.0232 | Train Acc: 99.22%
+  Val Loss: 0.1016 | Val Acc: 97.30%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 10/44
+  Train Loss: 0.0250 | Train Acc: 99.17%
+  Val Loss: 0.1031 | Val Acc: 97.68%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 11/44
+  Train Loss: 0.0229 | Train Acc: 99.25%
+  Val Loss: 0.1092 | Val Acc: 97.44%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 12/44
+  Train Loss: 0.0224 | Train Acc: 99.24%
+  Val Loss: 0.0928 | Val Acc: 97.62%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 13/44
+  Train Loss: 0.0125 | Train Acc: 99.56%
+  Val Loss: 0.0983 | Val Acc: 97.78%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 14/44
+  Train Loss: 0.0195 | Train Acc: 99.36%
+  Val Loss: 0.1055 | Val Acc: 97.78%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 15/44
+  Train Loss: 0.0156 | Train Acc: 99.49%
+  Val Loss: 0.0958 | Val Acc: 98.26%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 16/44
+  Train Loss: 0.0162 | Train Acc: 99.50%
+  Val Loss: 0.1585 | Val Acc: 97.24%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 17/44
+  Train Loss: 0.0143 | Train Acc: 99.54%
+  Val Loss: 0.1170 | Val Acc: 97.62%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 18/44
+  Train Loss: 0.0149 | Train Acc: 99.56%
+  Val Loss: 0.1452 | Val Acc: 97.58%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 19/44
+  Train Loss: 0.0178 | Train Acc: 99.47%
+  Val Loss: 0.1357 | Val Acc: 97.64%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 20/44
+  Train Loss: 0.0134 | Train Acc: 99.59%
+  Val Loss: 0.1623 | Val Acc: 97.44%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 21/44
+  Train Loss: 0.0134 | Train Acc: 99.64%
+  Val Loss: 0.1242 | Val Acc: 97.82%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 22/44
+  Train Loss: 0.0134 | Train Acc: 99.61%
+  Val Loss: 0.1503 | Val Acc: 97.52%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 23/44
+  Train Loss: 0.0110 | Train Acc: 99.67%
+  Val Loss: 0.1628 | Val Acc: 97.32%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 24/44
+  Train Loss: 0.0158 | Train Acc: 99.58%
+  Val Loss: 0.1517 | Val Acc: 97.70%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 25/44
+  Train Loss: 0.0106 | Train Acc: 99.68%
+  Val Loss: 0.1236 | Val Acc: 97.68%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 26/44
+  Train Loss: 0.0097 | Train Acc: 99.73%
+  Val Loss: 0.1570 | Val Acc: 97.72%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 27/44
+  Train Loss: 0.0140 | Train Acc: 99.60%
+  Val Loss: 0.1668 | Val Acc: 97.74%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 28/44
+  Train Loss: 0.0125 | Train Acc: 99.63%
+  Val Loss: 0.1461 | Val Acc: 97.76%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 29/44
+  Train Loss: 0.0087 | Train Acc: 99.75%
+  Val Loss: 0.1458 | Val Acc: 97.68%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 30/44
+  Train Loss: 0.0095 | Train Acc: 99.73%
+  Val Loss: 0.1908 | Val Acc: 97.30%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 31/44
+  Train Loss: 0.0173 | Train Acc: 99.55%
+  Val Loss: 0.1606 | Val Acc: 97.90%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 32/44
+  Train Loss: 0.0081 | Train Acc: 99.78%
+  Val Loss: 0.1361 | Val Acc: 97.98%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 33/44
+  Train Loss: 0.0059 | Train Acc: 99.82%
+  Val Loss: 0.1410 | Val Acc: 98.04%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 34/44
+  Train Loss: 0.0144 | Train Acc: 99.65%
+  Val Loss: 0.1664 | Val Acc: 97.74%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 35/44
+  Train Loss: 0.0107 | Train Acc: 99.72%
+  Val Loss: 0.1760 | Val Acc: 97.72%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 36/44
+  Train Loss: 0.0101 | Train Acc: 99.73%
+  Val Loss: 0.1841 | Val Acc: 97.54%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 37/44
+  Train Loss: 0.0094 | Train Acc: 99.75%
+  Val Loss: 0.1755 | Val Acc: 97.88%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 38/44
+  Train Loss: 0.0092 | Train Acc: 99.76%
+  Val Loss: 0.1708 | Val Acc: 97.78%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 39/44
+  Train Loss: 0.0109 | Train Acc: 99.73%
+  Val Loss: 0.2119 | Val Acc: 97.80%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 40/44
+  Train Loss: 0.0066 | Train Acc: 99.81%
+  Val Loss: 0.1900 | Val Acc: 98.06%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 41/44
+  Train Loss: 0.0131 | Train Acc: 99.70%
+  Val Loss: 0.1733 | Val Acc: 98.08%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 42/44
+  Train Loss: 0.0112 | Train Acc: 99.73%
+  Val Loss: 0.1955 | Val Acc: 97.90%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 43/44
+  Train Loss: 0.0061 | Train Acc: 99.84%
+  Val Loss: 0.2397 | Val Acc: 97.64%
+  Best Val Loss: 0.0883 at iteration 3668
+
+Epoch 44/44
+  Train Loss: 0.0076 | Train Acc: 99.82%
+  Val Loss: 0.2107 | Val Acc: 97.92%
+  Best Val Loss: 0.0883 at iteration 3668
+
+============================================================
+Training Complete!
+  Final Test Accuracy: 98.03%
+  Best Validation Loss: 0.0883 at iteration 3668
+============================================================
+
+
+Round 5 Results:
+  Early-stop iteration: 3,668
+  Early-stop val accuracy: 97.40%
+  Final test accuracy: 98.03%
+  Training time: 386.4s
+
+Pruning 20.0% of remaining weights...
+New sparsity: 67.23% (32.77% remaining)
+✓ Weights reset to initial values (with current mask applied)
+
+======================================================================
+ROUND 6/15
+======================================================================
+Starting sparsity: 67.23% (32.77% weights remaining)
+
+============================================================
+Training Configuration:
+  Total iterations: 40,000
+  Epochs: 44
+  Learning rate: 0.0012
+  Optimizer: Adam
+  Device: cuda
+  Parameters: 266,610
+  Non-zero parameters: 87,231
+  Sparsity: 67.28%
+============================================================
+
+
+Epoch 1/44
+  Train Loss: 0.1974 | Train Acc: 93.98%
+  Val Loss: 0.1331 | Val Acc: 95.56%
+  Best Val Loss: 0.1331 at iteration 917
+
+Epoch 2/44
+  Train Loss: 0.0888 | Train Acc: 97.25%
+  Val Loss: 0.1013 | Val Acc: 96.86%
+  Best Val Loss: 0.1013 at iteration 1834
+
+Epoch 3/44
+  Train Loss: 0.0603 | Train Acc: 98.09%
+  Val Loss: 0.1055 | Val Acc: 96.74%
+  Best Val Loss: 0.1013 at iteration 1834
+
+Epoch 4/44
+  Train Loss: 0.0499 | Train Acc: 98.38%
+  Val Loss: 0.0936 | Val Acc: 97.24%
+  Best Val Loss: 0.0936 at iteration 3668
+
+Epoch 5/44
+  Train Loss: 0.0406 | Train Acc: 98.61%
+  Val Loss: 0.1101 | Val Acc: 96.96%
+  Best Val Loss: 0.0936 at iteration 3668
+
+Epoch 6/44
+  Train Loss: 0.0351 | Train Acc: 98.84%
+  Val Loss: 0.0940 | Val Acc: 97.62%
+  Best Val Loss: 0.0936 at iteration 3668
+
+Epoch 7/44
+  Train Loss: 0.0292 | Train Acc: 99.06%
+  Val Loss: 0.0986 | Val Acc: 97.64%
+  Best Val Loss: 0.0936 at iteration 3668
+
+Epoch 8/44
+  Train Loss: 0.0281 | Train Acc: 99.10%
+  Val Loss: 0.0937 | Val Acc: 97.58%
+  Best Val Loss: 0.0936 at iteration 3668
+
+Epoch 9/44
+  Train Loss: 0.0232 | Train Acc: 99.22%
+  Val Loss: 0.0990 | Val Acc: 97.48%
+  Best Val Loss: 0.0936 at iteration 3668
+
+Epoch 10/44
+  Train Loss: 0.0218 | Train Acc: 99.27%
+  Val Loss: 0.0929 | Val Acc: 97.78%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 11/44
+  Train Loss: 0.0194 | Train Acc: 99.41%
+  Val Loss: 0.1207 | Val Acc: 97.26%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 12/44
+  Train Loss: 0.0216 | Train Acc: 99.28%
+  Val Loss: 0.1099 | Val Acc: 97.46%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 13/44
+  Train Loss: 0.0202 | Train Acc: 99.38%
+  Val Loss: 0.1201 | Val Acc: 97.36%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 14/44
+  Train Loss: 0.0165 | Train Acc: 99.50%
+  Val Loss: 0.1270 | Val Acc: 97.30%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 15/44
+  Train Loss: 0.0185 | Train Acc: 99.43%
+  Val Loss: 0.1395 | Val Acc: 97.20%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 16/44
+  Train Loss: 0.0143 | Train Acc: 99.52%
+  Val Loss: 0.1244 | Val Acc: 97.68%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 17/44
+  Train Loss: 0.0150 | Train Acc: 99.51%
+  Val Loss: 0.1269 | Val Acc: 97.46%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 18/44
+  Train Loss: 0.0172 | Train Acc: 99.49%
+  Val Loss: 0.1336 | Val Acc: 97.52%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 19/44
+  Train Loss: 0.0140 | Train Acc: 99.55%
+  Val Loss: 0.1242 | Val Acc: 97.54%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 20/44
+  Train Loss: 0.0126 | Train Acc: 99.58%
+  Val Loss: 0.1314 | Val Acc: 97.48%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 21/44
+  Train Loss: 0.0098 | Train Acc: 99.67%
+  Val Loss: 0.1625 | Val Acc: 97.46%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 22/44
+  Train Loss: 0.0182 | Train Acc: 99.44%
+  Val Loss: 0.1408 | Val Acc: 97.62%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 23/44
+  Train Loss: 0.0138 | Train Acc: 99.61%
+  Val Loss: 0.1648 | Val Acc: 97.36%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 24/44
+  Train Loss: 0.0074 | Train Acc: 99.74%
+  Val Loss: 0.1501 | Val Acc: 97.30%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 25/44
+  Train Loss: 0.0148 | Train Acc: 99.61%
+  Val Loss: 0.1638 | Val Acc: 97.72%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 26/44
+  Train Loss: 0.0127 | Train Acc: 99.67%
+  Val Loss: 0.1724 | Val Acc: 97.42%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 27/44
+  Train Loss: 0.0108 | Train Acc: 99.67%
+  Val Loss: 0.1568 | Val Acc: 97.66%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 28/44
+  Train Loss: 0.0126 | Train Acc: 99.67%
+  Val Loss: 0.1485 | Val Acc: 97.64%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 29/44
+  Train Loss: 0.0077 | Train Acc: 99.76%
+  Val Loss: 0.1447 | Val Acc: 97.86%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 30/44
+  Train Loss: 0.0097 | Train Acc: 99.73%
+  Val Loss: 0.1764 | Val Acc: 97.54%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 31/44
+  Train Loss: 0.0144 | Train Acc: 99.59%
+  Val Loss: 0.1539 | Val Acc: 97.76%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 32/44
+  Train Loss: 0.0084 | Train Acc: 99.73%
+  Val Loss: 0.1773 | Val Acc: 97.62%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 33/44
+  Train Loss: 0.0110 | Train Acc: 99.68%
+  Val Loss: 0.2331 | Val Acc: 97.30%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 34/44
+  Train Loss: 0.0131 | Train Acc: 99.68%
+  Val Loss: 0.2298 | Val Acc: 97.32%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 35/44
+  Train Loss: 0.0105 | Train Acc: 99.73%
+  Val Loss: 0.2016 | Val Acc: 97.38%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 36/44
+  Train Loss: 0.0057 | Train Acc: 99.85%
+  Val Loss: 0.2012 | Val Acc: 97.54%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 37/44
+  Train Loss: 0.0148 | Train Acc: 99.67%
+  Val Loss: 0.1640 | Val Acc: 97.84%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 38/44
+  Train Loss: 0.0075 | Train Acc: 99.80%
+  Val Loss: 0.2401 | Val Acc: 97.18%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 39/44
+  Train Loss: 0.0123 | Train Acc: 99.69%
+  Val Loss: 0.1979 | Val Acc: 97.64%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 40/44
+  Train Loss: 0.0092 | Train Acc: 99.76%
+  Val Loss: 0.2085 | Val Acc: 97.48%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 41/44
+  Train Loss: 0.0107 | Train Acc: 99.73%
+  Val Loss: 0.1885 | Val Acc: 97.68%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 42/44
+  Train Loss: 0.0087 | Train Acc: 99.75%
+  Val Loss: 0.1739 | Val Acc: 97.68%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 43/44
+  Train Loss: 0.0078 | Train Acc: 99.77%
+  Val Loss: 0.2061 | Val Acc: 97.82%
+  Best Val Loss: 0.0929 at iteration 9170
+
+Epoch 44/44
+  Train Loss: 0.0084 | Train Acc: 99.78%
+  Val Loss: 0.1853 | Val Acc: 98.06%
+  Best Val Loss: 0.0929 at iteration 9170
+
+============================================================
+Training Complete!
+  Final Test Accuracy: 98.06%
+  Best Validation Loss: 0.0929 at iteration 9170
+============================================================
+
+
+Round 6 Results:
+  Early-stop iteration: 9,170
+  Early-stop val accuracy: 97.78%
+  Final test accuracy: 98.06%
+  Training time: 388.3s
+
+Pruning 20.0% of remaining weights...
+New sparsity: 73.78% (26.22% remaining)
+✓ Weights reset to initial values (with current mask applied)
+
+======================================================================
+ROUND 7/15
+======================================================================
+Starting sparsity: 73.78% (26.22% weights remaining)
+
+============================================================
+Training Configuration:
+  Total iterations: 40,000
+  Epochs: 44
+  Learning rate: 0.0012
+  Optimizer: Adam
+  Device: cuda
+  Parameters: 266,610
+  Non-zero parameters: 69,786
+  Sparsity: 73.82%
+============================================================
+
+
+Epoch 1/44
+  Train Loss: 0.1997 | Train Acc: 94.01%
+  Val Loss: 0.1443 | Val Acc: 95.66%
+  Best Val Loss: 0.1443 at iteration 917
+
+Epoch 2/44
+  Train Loss: 0.0873 | Train Acc: 97.25%
+  Val Loss: 0.1114 | Val Acc: 96.56%
+  Best Val Loss: 0.1114 at iteration 1834
+
+Epoch 3/44
+  Train Loss: 0.0647 | Train Acc: 97.89%
+  Val Loss: 0.0944 | Val Acc: 97.14%
+  Best Val Loss: 0.0944 at iteration 2751
+
+Epoch 4/44
+  Train Loss: 0.0484 | Train Acc: 98.40%
+  Val Loss: 0.0829 | Val Acc: 97.72%
+  Best Val Loss: 0.0829 at iteration 3668
+
+Epoch 5/44
+  Train Loss: 0.0415 | Train Acc: 98.67%
+  Val Loss: 0.1010 | Val Acc: 97.26%
+  Best Val Loss: 0.0829 at iteration 3668
+
+Epoch 6/44
+  Train Loss: 0.0337 | Train Acc: 98.88%
+  Val Loss: 0.0817 | Val Acc: 97.84%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 7/44
+  Train Loss: 0.0312 | Train Acc: 98.93%
+  Val Loss: 0.1198 | Val Acc: 97.14%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 8/44
+  Train Loss: 0.0269 | Train Acc: 99.09%
+  Val Loss: 0.0887 | Val Acc: 98.04%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 9/44
+  Train Loss: 0.0229 | Train Acc: 99.24%
+  Val Loss: 0.1295 | Val Acc: 97.04%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 10/44
+  Train Loss: 0.0239 | Train Acc: 99.22%
+  Val Loss: 0.1519 | Val Acc: 96.76%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 11/44
+  Train Loss: 0.0189 | Train Acc: 99.38%
+  Val Loss: 0.1120 | Val Acc: 97.52%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 12/44
+  Train Loss: 0.0186 | Train Acc: 99.35%
+  Val Loss: 0.1221 | Val Acc: 97.52%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 13/44
+  Train Loss: 0.0215 | Train Acc: 99.33%
+  Val Loss: 0.1091 | Val Acc: 97.54%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 14/44
+  Train Loss: 0.0155 | Train Acc: 99.51%
+  Val Loss: 0.1381 | Val Acc: 97.58%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 15/44
+  Train Loss: 0.0177 | Train Acc: 99.44%
+  Val Loss: 0.1174 | Val Acc: 97.60%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 16/44
+  Train Loss: 0.0128 | Train Acc: 99.59%
+  Val Loss: 0.1099 | Val Acc: 97.82%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 17/44
+  Train Loss: 0.0176 | Train Acc: 99.45%
+  Val Loss: 0.1197 | Val Acc: 97.64%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 18/44
+  Train Loss: 0.0131 | Train Acc: 99.59%
+  Val Loss: 0.1285 | Val Acc: 97.58%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 19/44
+  Train Loss: 0.0160 | Train Acc: 99.56%
+  Val Loss: 0.1773 | Val Acc: 97.24%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 20/44
+  Train Loss: 0.0134 | Train Acc: 99.62%
+  Val Loss: 0.1285 | Val Acc: 97.84%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 21/44
+  Train Loss: 0.0115 | Train Acc: 99.61%
+  Val Loss: 0.1313 | Val Acc: 97.68%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 22/44
+  Train Loss: 0.0163 | Train Acc: 99.54%
+  Val Loss: 0.1338 | Val Acc: 98.04%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 23/44
+  Train Loss: 0.0102 | Train Acc: 99.68%
+  Val Loss: 0.1549 | Val Acc: 97.82%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 24/44
+  Train Loss: 0.0161 | Train Acc: 99.57%
+  Val Loss: 0.1457 | Val Acc: 97.78%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 25/44
+  Train Loss: 0.0121 | Train Acc: 99.65%
+  Val Loss: 0.1743 | Val Acc: 97.62%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 26/44
+  Train Loss: 0.0115 | Train Acc: 99.66%
+  Val Loss: 0.1657 | Val Acc: 97.60%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 27/44
+  Train Loss: 0.0119 | Train Acc: 99.68%
+  Val Loss: 0.1408 | Val Acc: 97.92%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 28/44
+  Train Loss: 0.0105 | Train Acc: 99.69%
+  Val Loss: 0.1436 | Val Acc: 97.96%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 29/44
+  Train Loss: 0.0099 | Train Acc: 99.72%
+  Val Loss: 0.1802 | Val Acc: 97.60%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 30/44
+  Train Loss: 0.0096 | Train Acc: 99.71%
+  Val Loss: 0.1858 | Val Acc: 97.74%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 31/44
+  Train Loss: 0.0109 | Train Acc: 99.69%
+  Val Loss: 0.1641 | Val Acc: 97.78%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 32/44
+  Train Loss: 0.0128 | Train Acc: 99.61%
+  Val Loss: 0.1790 | Val Acc: 97.88%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 33/44
+  Train Loss: 0.0111 | Train Acc: 99.73%
+  Val Loss: 0.1903 | Val Acc: 97.64%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 34/44
+  Train Loss: 0.0091 | Train Acc: 99.72%
+  Val Loss: 0.1870 | Val Acc: 97.74%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 35/44
+  Train Loss: 0.0106 | Train Acc: 99.74%
+  Val Loss: 0.1729 | Val Acc: 97.88%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 36/44
+  Train Loss: 0.0095 | Train Acc: 99.77%
+  Val Loss: 0.2158 | Val Acc: 97.50%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 37/44
+  Train Loss: 0.0111 | Train Acc: 99.70%
+  Val Loss: 0.1742 | Val Acc: 97.98%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 38/44
+  Train Loss: 0.0103 | Train Acc: 99.73%
+  Val Loss: 0.1808 | Val Acc: 97.86%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 39/44
+  Train Loss: 0.0108 | Train Acc: 99.75%
+  Val Loss: 0.1939 | Val Acc: 97.86%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 40/44
+  Train Loss: 0.0076 | Train Acc: 99.82%
+  Val Loss: 0.1852 | Val Acc: 97.88%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 41/44
+  Train Loss: 0.0118 | Train Acc: 99.72%
+  Val Loss: 0.2090 | Val Acc: 97.70%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 42/44
+  Train Loss: 0.0075 | Train Acc: 99.82%
+  Val Loss: 0.1875 | Val Acc: 97.96%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 43/44
+  Train Loss: 0.0124 | Train Acc: 99.69%
+  Val Loss: 0.2049 | Val Acc: 97.70%
+  Best Val Loss: 0.0817 at iteration 5502
+
+Epoch 44/44
+  Train Loss: 0.0109 | Train Acc: 99.72%
+  Val Loss: 0.2106 | Val Acc: 97.82%
+  Best Val Loss: 0.0817 at iteration 5502
+
+============================================================
+Training Complete!
+  Final Test Accuracy: 98.09%
+  Best Validation Loss: 0.0817 at iteration 5502
+============================================================
+
+
+Round 7 Results:
+  Early-stop iteration: 5,502
+  Early-stop val accuracy: 97.84%
+  Final test accuracy: 98.09%
+  Training time: 394.1s
+
+Pruning 20.0% of remaining weights...
+New sparsity: 79.03% (20.97% remaining)
+✓ Weights reset to initial values (with current mask applied)
+
+======================================================================
+ROUND 8/15
+======================================================================
+Starting sparsity: 79.03% (20.97% weights remaining)
+
+============================================================
+Training Configuration:
+  Total iterations: 40,000
+  Epochs: 44
+  Learning rate: 0.0012
+  Optimizer: Adam
+  Device: cuda
+  Parameters: 266,610
+  Non-zero parameters: 55,830
+  Sparsity: 79.06%
+============================================================
+
+
+Epoch 1/44
+  Train Loss: 0.2027 | Train Acc: 93.90%
+  Val Loss: 0.1259 | Val Acc: 95.98%
+  Best Val Loss: 0.1259 at iteration 917
+
+Epoch 2/44
+  Train Loss: 0.0891 | Train Acc: 97.27%
+  Val Loss: 0.1141 | Val Acc: 96.68%
+  Best Val Loss: 0.1141 at iteration 1834
+
+Epoch 3/44
+  Train Loss: 0.0655 | Train Acc: 97.85%
+  Val Loss: 0.0950 | Val Acc: 97.18%
+  Best Val Loss: 0.0950 at iteration 2751
+
+Epoch 4/44
+  Train Loss: 0.0489 | Train Acc: 98.39%
+  Val Loss: 0.0859 | Val Acc: 97.62%
+  Best Val Loss: 0.0859 at iteration 3668
+
+Epoch 5/44
+  Train Loss: 0.0386 | Train Acc: 98.74%
+  Val Loss: 0.0830 | Val Acc: 97.78%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 6/44
+  Train Loss: 0.0367 | Train Acc: 98.76%
+  Val Loss: 0.0934 | Val Acc: 97.36%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 7/44
+  Train Loss: 0.0324 | Train Acc: 98.93%
+  Val Loss: 0.1088 | Val Acc: 97.42%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 8/44
+  Train Loss: 0.0275 | Train Acc: 99.10%
+  Val Loss: 0.0907 | Val Acc: 97.66%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 9/44
+  Train Loss: 0.0248 | Train Acc: 99.19%
+  Val Loss: 0.0919 | Val Acc: 97.80%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 10/44
+  Train Loss: 0.0222 | Train Acc: 99.26%
+  Val Loss: 0.0973 | Val Acc: 97.80%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 11/44
+  Train Loss: 0.0242 | Train Acc: 99.23%
+  Val Loss: 0.1018 | Val Acc: 97.62%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 12/44
+  Train Loss: 0.0165 | Train Acc: 99.47%
+  Val Loss: 0.1384 | Val Acc: 97.26%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 13/44
+  Train Loss: 0.0154 | Train Acc: 99.46%
+  Val Loss: 0.1184 | Val Acc: 97.58%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 14/44
+  Train Loss: 0.0211 | Train Acc: 99.33%
+  Val Loss: 0.1042 | Val Acc: 97.92%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 15/44
+  Train Loss: 0.0131 | Train Acc: 99.56%
+  Val Loss: 0.1217 | Val Acc: 97.64%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 16/44
+  Train Loss: 0.0140 | Train Acc: 99.51%
+  Val Loss: 0.1295 | Val Acc: 97.58%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 17/44
+  Train Loss: 0.0144 | Train Acc: 99.52%
+  Val Loss: 0.1309 | Val Acc: 97.56%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 18/44
+  Train Loss: 0.0179 | Train Acc: 99.48%
+  Val Loss: 0.1235 | Val Acc: 97.80%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 19/44
+  Train Loss: 0.0145 | Train Acc: 99.54%
+  Val Loss: 0.1443 | Val Acc: 97.52%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 20/44
+  Train Loss: 0.0148 | Train Acc: 99.51%
+  Val Loss: 0.1549 | Val Acc: 97.66%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 21/44
+  Train Loss: 0.0130 | Train Acc: 99.61%
+  Val Loss: 0.1358 | Val Acc: 97.74%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 22/44
+  Train Loss: 0.0120 | Train Acc: 99.62%
+  Val Loss: 0.1434 | Val Acc: 97.82%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 23/44
+  Train Loss: 0.0130 | Train Acc: 99.64%
+  Val Loss: 0.1392 | Val Acc: 97.70%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 24/44
+  Train Loss: 0.0090 | Train Acc: 99.72%
+  Val Loss: 0.1634 | Val Acc: 97.62%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 25/44
+  Train Loss: 0.0116 | Train Acc: 99.65%
+  Val Loss: 0.1549 | Val Acc: 97.78%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 26/44
+  Train Loss: 0.0156 | Train Acc: 99.55%
+  Val Loss: 0.1355 | Val Acc: 97.78%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 27/44
+  Train Loss: 0.0093 | Train Acc: 99.74%
+  Val Loss: 0.1586 | Val Acc: 97.68%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 28/44
+  Train Loss: 0.0111 | Train Acc: 99.67%
+  Val Loss: 0.1731 | Val Acc: 97.68%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 29/44
+  Train Loss: 0.0100 | Train Acc: 99.69%
+  Val Loss: 0.1797 | Val Acc: 97.52%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 30/44
+  Train Loss: 0.0124 | Train Acc: 99.63%
+  Val Loss: 0.1414 | Val Acc: 98.04%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 31/44
+  Train Loss: 0.0114 | Train Acc: 99.72%
+  Val Loss: 0.1634 | Val Acc: 97.68%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 32/44
+  Train Loss: 0.0084 | Train Acc: 99.74%
+  Val Loss: 0.1613 | Val Acc: 98.02%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 33/44
+  Train Loss: 0.0091 | Train Acc: 99.73%
+  Val Loss: 0.1757 | Val Acc: 97.80%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 34/44
+  Train Loss: 0.0115 | Train Acc: 99.69%
+  Val Loss: 0.1606 | Val Acc: 97.82%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 35/44
+  Train Loss: 0.0096 | Train Acc: 99.74%
+  Val Loss: 0.1887 | Val Acc: 97.54%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 36/44
+  Train Loss: 0.0121 | Train Acc: 99.67%
+  Val Loss: 0.1927 | Val Acc: 97.82%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 37/44
+  Train Loss: 0.0136 | Train Acc: 99.66%
+  Val Loss: 0.1717 | Val Acc: 97.92%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 38/44
+  Train Loss: 0.0093 | Train Acc: 99.75%
+  Val Loss: 0.2114 | Val Acc: 97.78%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 39/44
+  Train Loss: 0.0139 | Train Acc: 99.68%
+  Val Loss: 0.1926 | Val Acc: 97.76%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 40/44
+  Train Loss: 0.0058 | Train Acc: 99.84%
+  Val Loss: 0.2034 | Val Acc: 97.58%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 41/44
+  Train Loss: 0.0071 | Train Acc: 99.80%
+  Val Loss: 0.2183 | Val Acc: 97.54%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 42/44
+  Train Loss: 0.0129 | Train Acc: 99.72%
+  Val Loss: 0.2313 | Val Acc: 97.46%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 43/44
+  Train Loss: 0.0067 | Train Acc: 99.82%
+  Val Loss: 0.2000 | Val Acc: 97.66%
+  Best Val Loss: 0.0830 at iteration 4585
+
+Epoch 44/44
+  Train Loss: 0.0089 | Train Acc: 99.79%
+  Val Loss: 0.2002 | Val Acc: 97.76%
+  Best Val Loss: 0.0830 at iteration 4585
+
+============================================================
+Training Complete!
+  Final Test Accuracy: 97.96%
+  Best Validation Loss: 0.0830 at iteration 4585
+============================================================
+
+
+Round 8 Results:
+  Early-stop iteration: 4,585
+  Early-stop val accuracy: 97.78%
+  Final test accuracy: 97.96%
+  Training time: 389.5s
+
+Pruning 20.0% of remaining weights...
+New sparsity: 83.22% (16.78% remaining)
+✓ Weights reset to initial values (with current mask applied)
+
+======================================================================
+ROUND 9/15
+======================================================================
+Starting sparsity: 83.22% (16.78% weights remaining)
+
+============================================================
+Training Configuration:
+  Total iterations: 40,000
+  Epochs: 44
+  Learning rate: 0.0012
+  Optimizer: Adam
+  Device: cuda
+  Parameters: 266,610
+  Non-zero parameters: 44,665
+  Sparsity: 83.25%
+============================================================
+
+
+Epoch 1/44
+  Train Loss: 0.2110 | Train Acc: 93.76%
+  Val Loss: 0.1234 | Val Acc: 96.08%
+  Best Val Loss: 0.1234 at iteration 917
+
+Epoch 2/44
+  Train Loss: 0.0897 | Train Acc: 97.13%
+  Val Loss: 0.1071 | Val Acc: 96.76%
+  Best Val Loss: 0.1071 at iteration 1834
+
+Epoch 3/44
+  Train Loss: 0.0625 | Train Acc: 97.96%
+  Val Loss: 0.0891 | Val Acc: 97.38%
+  Best Val Loss: 0.0891 at iteration 2751
+
+Epoch 4/44
+  Train Loss: 0.0523 | Train Acc: 98.32%
+  Val Loss: 0.0888 | Val Acc: 97.32%
+  Best Val Loss: 0.0888 at iteration 3668
+
+Epoch 5/44
+  Train Loss: 0.0401 | Train Acc: 98.73%
+  Val Loss: 0.0912 | Val Acc: 97.42%
+  Best Val Loss: 0.0888 at iteration 3668
+
+Epoch 6/44
+  Train Loss: 0.0353 | Train Acc: 98.82%
+  Val Loss: 0.1031 | Val Acc: 97.28%
+  Best Val Loss: 0.0888 at iteration 3668
+
+Epoch 7/44
+  Train Loss: 0.0311 | Train Acc: 98.95%
+  Val Loss: 0.0931 | Val Acc: 97.32%
+  Best Val Loss: 0.0888 at iteration 3668
+
+Epoch 8/44
+  Train Loss: 0.0300 | Train Acc: 98.96%
+  Val Loss: 0.0853 | Val Acc: 97.82%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 9/44
+  Train Loss: 0.0238 | Train Acc: 99.18%
+  Val Loss: 0.1070 | Val Acc: 97.32%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 10/44
+  Train Loss: 0.0227 | Train Acc: 99.25%
+  Val Loss: 0.1007 | Val Acc: 97.50%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 11/44
+  Train Loss: 0.0213 | Train Acc: 99.29%
+  Val Loss: 0.1096 | Val Acc: 97.66%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 12/44
+  Train Loss: 0.0189 | Train Acc: 99.38%
+  Val Loss: 0.0961 | Val Acc: 97.98%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 13/44
+  Train Loss: 0.0176 | Train Acc: 99.42%
+  Val Loss: 0.1205 | Val Acc: 97.42%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 14/44
+  Train Loss: 0.0175 | Train Acc: 99.47%
+  Val Loss: 0.1038 | Val Acc: 97.78%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 15/44
+  Train Loss: 0.0161 | Train Acc: 99.47%
+  Val Loss: 0.1146 | Val Acc: 97.88%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 16/44
+  Train Loss: 0.0196 | Train Acc: 99.39%
+  Val Loss: 0.1168 | Val Acc: 97.58%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 17/44
+  Train Loss: 0.0132 | Train Acc: 99.57%
+  Val Loss: 0.1214 | Val Acc: 97.74%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 18/44
+  Train Loss: 0.0154 | Train Acc: 99.55%
+  Val Loss: 0.1334 | Val Acc: 97.66%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 19/44
+  Train Loss: 0.0167 | Train Acc: 99.49%
+  Val Loss: 0.1253 | Val Acc: 97.88%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 20/44
+  Train Loss: 0.0122 | Train Acc: 99.65%
+  Val Loss: 0.1355 | Val Acc: 97.84%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 21/44
+  Train Loss: 0.0129 | Train Acc: 99.60%
+  Val Loss: 0.1407 | Val Acc: 97.30%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 22/44
+  Train Loss: 0.0121 | Train Acc: 99.63%
+  Val Loss: 0.1180 | Val Acc: 98.12%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 23/44
+  Train Loss: 0.0131 | Train Acc: 99.59%
+  Val Loss: 0.1527 | Val Acc: 97.54%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 24/44
+  Train Loss: 0.0136 | Train Acc: 99.61%
+  Val Loss: 0.1469 | Val Acc: 97.62%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 25/44
+  Train Loss: 0.0111 | Train Acc: 99.70%
+  Val Loss: 0.1702 | Val Acc: 97.68%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 26/44
+  Train Loss: 0.0127 | Train Acc: 99.63%
+  Val Loss: 0.1450 | Val Acc: 97.90%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 27/44
+  Train Loss: 0.0114 | Train Acc: 99.69%
+  Val Loss: 0.1457 | Val Acc: 97.86%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 28/44
+  Train Loss: 0.0102 | Train Acc: 99.71%
+  Val Loss: 0.1358 | Val Acc: 97.96%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 29/44
+  Train Loss: 0.0084 | Train Acc: 99.74%
+  Val Loss: 0.1676 | Val Acc: 97.70%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 30/44
+  Train Loss: 0.0128 | Train Acc: 99.67%
+  Val Loss: 0.1591 | Val Acc: 97.74%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 31/44
+  Train Loss: 0.0120 | Train Acc: 99.68%
+  Val Loss: 0.1709 | Val Acc: 97.82%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 32/44
+  Train Loss: 0.0110 | Train Acc: 99.71%
+  Val Loss: 0.1715 | Val Acc: 97.70%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 33/44
+  Train Loss: 0.0093 | Train Acc: 99.73%
+  Val Loss: 0.1617 | Val Acc: 97.94%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 34/44
+  Train Loss: 0.0108 | Train Acc: 99.72%
+  Val Loss: 0.1703 | Val Acc: 98.02%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 35/44
+  Train Loss: 0.0081 | Train Acc: 99.76%
+  Val Loss: 0.1924 | Val Acc: 97.90%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 36/44
+  Train Loss: 0.0137 | Train Acc: 99.65%
+  Val Loss: 0.1735 | Val Acc: 98.06%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 37/44
+  Train Loss: 0.0085 | Train Acc: 99.77%
+  Val Loss: 0.1648 | Val Acc: 98.00%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 38/44
+  Train Loss: 0.0115 | Train Acc: 99.70%
+  Val Loss: 0.1901 | Val Acc: 97.80%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 39/44
+  Train Loss: 0.0083 | Train Acc: 99.78%
+  Val Loss: 0.2052 | Val Acc: 97.60%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 40/44
+  Train Loss: 0.0092 | Train Acc: 99.73%
+  Val Loss: 0.2096 | Val Acc: 97.74%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 41/44
+  Train Loss: 0.0083 | Train Acc: 99.76%
+  Val Loss: 0.1933 | Val Acc: 98.06%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 42/44
+  Train Loss: 0.0072 | Train Acc: 99.81%
+  Val Loss: 0.2153 | Val Acc: 97.58%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 43/44
+  Train Loss: 0.0102 | Train Acc: 99.73%
+  Val Loss: 0.2307 | Val Acc: 97.56%
+  Best Val Loss: 0.0853 at iteration 7336
+
+Epoch 44/44
+  Train Loss: 0.0109 | Train Acc: 99.72%
+  Val Loss: 0.2067 | Val Acc: 97.84%
+  Best Val Loss: 0.0853 at iteration 7336
+
+============================================================
+Training Complete!
+  Final Test Accuracy: 97.79%
+  Best Validation Loss: 0.0853 at iteration 7336
+============================================================
+
+
+Round 9 Results:
+  Early-stop iteration: 7,336
+  Early-stop val accuracy: 97.82%
+  Final test accuracy: 97.79%
+  Training time: 384.8s
+
+Pruning 20.0% of remaining weights...
+New sparsity: 86.58% (13.42% remaining)
+✓ Weights reset to initial values (with current mask applied)
+
+======================================================================
+ROUND 10/15
+======================================================================
+Starting sparsity: 86.58% (13.42% weights remaining)
+
+============================================================
+Training Configuration:
+  Total iterations: 40,000
+  Epochs: 44
+  Learning rate: 0.0012
+  Optimizer: Adam
+  Device: cuda
+  Parameters: 266,610
+  Non-zero parameters: 35,734
+  Sparsity: 86.60%
+============================================================
+
+
+Epoch 1/44
+  Train Loss: 0.2153 | Train Acc: 93.61%
+  Val Loss: 0.1166 | Val Acc: 96.32%
+  Best Val Loss: 0.1166 at iteration 917
+
+Epoch 2/44
+  Train Loss: 0.0910 | Train Acc: 97.21%
+  Val Loss: 0.1010 | Val Acc: 97.02%
+  Best Val Loss: 0.1010 at iteration 1834
+
+Epoch 3/44
+  Train Loss: 0.0659 | Train Acc: 97.86%
+  Val Loss: 0.0967 | Val Acc: 97.28%
+  Best Val Loss: 0.0967 at iteration 2751
+
+Epoch 4/44
+  Train Loss: 0.0510 | Train Acc: 98.39%
+  Val Loss: 0.0865 | Val Acc: 97.32%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 5/44
+  Train Loss: 0.0428 | Train Acc: 98.58%
+  Val Loss: 0.1225 | Val Acc: 96.90%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 6/44
+  Train Loss: 0.0372 | Train Acc: 98.80%
+  Val Loss: 0.1204 | Val Acc: 96.76%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 7/44
+  Train Loss: 0.0299 | Train Acc: 99.00%
+  Val Loss: 0.0981 | Val Acc: 97.46%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 8/44
+  Train Loss: 0.0317 | Train Acc: 98.92%
+  Val Loss: 0.0971 | Val Acc: 97.52%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 9/44
+  Train Loss: 0.0224 | Train Acc: 99.29%
+  Val Loss: 0.0920 | Val Acc: 97.58%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 10/44
+  Train Loss: 0.0226 | Train Acc: 99.19%
+  Val Loss: 0.1168 | Val Acc: 97.20%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 11/44
+  Train Loss: 0.0234 | Train Acc: 99.22%
+  Val Loss: 0.1506 | Val Acc: 96.94%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 12/44
+  Train Loss: 0.0191 | Train Acc: 99.41%
+  Val Loss: 0.1074 | Val Acc: 97.56%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 13/44
+  Train Loss: 0.0210 | Train Acc: 99.30%
+  Val Loss: 0.1057 | Val Acc: 97.90%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 14/44
+  Train Loss: 0.0140 | Train Acc: 99.55%
+  Val Loss: 0.0961 | Val Acc: 97.86%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 15/44
+  Train Loss: 0.0171 | Train Acc: 99.41%
+  Val Loss: 0.1273 | Val Acc: 97.42%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 16/44
+  Train Loss: 0.0166 | Train Acc: 99.45%
+  Val Loss: 0.1217 | Val Acc: 97.56%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 17/44
+  Train Loss: 0.0188 | Train Acc: 99.40%
+  Val Loss: 0.1187 | Val Acc: 97.54%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 18/44
+  Train Loss: 0.0127 | Train Acc: 99.57%
+  Val Loss: 0.1375 | Val Acc: 97.68%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 19/44
+  Train Loss: 0.0144 | Train Acc: 99.58%
+  Val Loss: 0.1310 | Val Acc: 97.66%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 20/44
+  Train Loss: 0.0120 | Train Acc: 99.63%
+  Val Loss: 0.1162 | Val Acc: 97.84%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 21/44
+  Train Loss: 0.0139 | Train Acc: 99.58%
+  Val Loss: 0.1370 | Val Acc: 97.56%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 22/44
+  Train Loss: 0.0135 | Train Acc: 99.62%
+  Val Loss: 0.1309 | Val Acc: 98.04%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 23/44
+  Train Loss: 0.0144 | Train Acc: 99.55%
+  Val Loss: 0.1528 | Val Acc: 97.60%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 24/44
+  Train Loss: 0.0121 | Train Acc: 99.66%
+  Val Loss: 0.1377 | Val Acc: 97.32%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 25/44
+  Train Loss: 0.0111 | Train Acc: 99.67%
+  Val Loss: 0.1447 | Val Acc: 97.64%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 26/44
+  Train Loss: 0.0161 | Train Acc: 99.55%
+  Val Loss: 0.1522 | Val Acc: 97.84%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 27/44
+  Train Loss: 0.0083 | Train Acc: 99.73%
+  Val Loss: 0.1877 | Val Acc: 97.58%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 28/44
+  Train Loss: 0.0094 | Train Acc: 99.71%
+  Val Loss: 0.1470 | Val Acc: 97.90%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 29/44
+  Train Loss: 0.0099 | Train Acc: 99.71%
+  Val Loss: 0.1685 | Val Acc: 97.94%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 30/44
+  Train Loss: 0.0168 | Train Acc: 99.57%
+  Val Loss: 0.1697 | Val Acc: 97.76%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 31/44
+  Train Loss: 0.0111 | Train Acc: 99.70%
+  Val Loss: 0.1841 | Val Acc: 97.72%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 32/44
+  Train Loss: 0.0091 | Train Acc: 99.75%
+  Val Loss: 0.1859 | Val Acc: 97.68%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 33/44
+  Train Loss: 0.0114 | Train Acc: 99.68%
+  Val Loss: 0.1921 | Val Acc: 97.36%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 34/44
+  Train Loss: 0.0130 | Train Acc: 99.67%
+  Val Loss: 0.1865 | Val Acc: 97.84%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 35/44
+  Train Loss: 0.0130 | Train Acc: 99.67%
+  Val Loss: 0.2052 | Val Acc: 97.72%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 36/44
+  Train Loss: 0.0133 | Train Acc: 99.70%
+  Val Loss: 0.1734 | Val Acc: 97.74%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 37/44
+  Train Loss: 0.0095 | Train Acc: 99.73%
+  Val Loss: 0.1778 | Val Acc: 97.82%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 38/44
+  Train Loss: 0.0082 | Train Acc: 99.79%
+  Val Loss: 0.1840 | Val Acc: 97.46%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 39/44
+  Train Loss: 0.0087 | Train Acc: 99.77%
+  Val Loss: 0.2552 | Val Acc: 97.30%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 40/44
+  Train Loss: 0.0106 | Train Acc: 99.74%
+  Val Loss: 0.2102 | Val Acc: 97.54%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 41/44
+  Train Loss: 0.0130 | Train Acc: 99.68%
+  Val Loss: 0.1919 | Val Acc: 97.82%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 42/44
+  Train Loss: 0.0088 | Train Acc: 99.79%
+  Val Loss: 0.1742 | Val Acc: 97.72%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 43/44
+  Train Loss: 0.0118 | Train Acc: 99.68%
+  Val Loss: 0.1780 | Val Acc: 97.90%
+  Best Val Loss: 0.0865 at iteration 3668
+
+Epoch 44/44
+  Train Loss: 0.0093 | Train Acc: 99.77%
+  Val Loss: 0.2261 | Val Acc: 97.62%
+  Best Val Loss: 0.0865 at iteration 3668
+
+============================================================
+Training Complete!
+  Final Test Accuracy: 97.79%
+  Best Validation Loss: 0.0865 at iteration 3668
+============================================================
+
+
+Round 10 Results:
+  Early-stop iteration: 3,668
+  Early-stop val accuracy: 97.32%
+  Final test accuracy: 97.79%
+  Training time: 391.7s
+
+Pruning 20.0% of remaining weights...
+New sparsity: 89.26% (10.74% remaining)
+✓ Weights reset to initial values (with current mask applied)
+
+======================================================================
+ROUND 11/15
+======================================================================
+Starting sparsity: 89.26% (10.74% weights remaining)
+
+============================================================
+Training Configuration:
+  Total iterations: 40,000
+  Epochs: 44
+  Learning rate: 0.0012
+  Optimizer: Adam
+  Device: cuda
+  Parameters: 266,610
+  Non-zero parameters: 28,588
+  Sparsity: 89.28%
+============================================================
+
+
+Epoch 1/44
+  Train Loss: 0.2235 | Train Acc: 93.39%
+  Val Loss: 0.1140 | Val Acc: 96.38%
+  Best Val Loss: 0.1140 at iteration 917
+
+Epoch 2/44
+  Train Loss: 0.0911 | Train Acc: 97.21%
+  Val Loss: 0.0913 | Val Acc: 97.16%
+  Best Val Loss: 0.0913 at iteration 1834
+
+Epoch 3/44
+  Train Loss: 0.0675 | Train Acc: 97.84%
+  Val Loss: 0.0983 | Val Acc: 96.96%
+  Best Val Loss: 0.0913 at iteration 1834
+
+Epoch 4/44
+  Train Loss: 0.0517 | Train Acc: 98.37%
+  Val Loss: 0.0828 | Val Acc: 97.46%
+  Best Val Loss: 0.0828 at iteration 3668
+
+Epoch 5/44
+  Train Loss: 0.0434 | Train Acc: 98.60%
+  Val Loss: 0.0740 | Val Acc: 97.58%
+  Best Val Loss: 0.0740 at iteration 4585
+
+Epoch 6/44
+  Train Loss: 0.0370 | Train Acc: 98.79%
+  Val Loss: 0.0911 | Val Acc: 97.42%
+  Best Val Loss: 0.0740 at iteration 4585
+
+Epoch 7/44
+  Train Loss: 0.0316 | Train Acc: 98.92%
+  Val Loss: 0.0736 | Val Acc: 97.74%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 8/44
+  Train Loss: 0.0299 | Train Acc: 99.03%
+  Val Loss: 0.0806 | Val Acc: 97.84%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 9/44
+  Train Loss: 0.0229 | Train Acc: 99.27%
+  Val Loss: 0.1006 | Val Acc: 97.68%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 10/44
+  Train Loss: 0.0224 | Train Acc: 99.28%
+  Val Loss: 0.0885 | Val Acc: 97.74%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 11/44
+  Train Loss: 0.0209 | Train Acc: 99.35%
+  Val Loss: 0.0910 | Val Acc: 97.94%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 12/44
+  Train Loss: 0.0232 | Train Acc: 99.24%
+  Val Loss: 0.1120 | Val Acc: 97.40%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 13/44
+  Train Loss: 0.0145 | Train Acc: 99.49%
+  Val Loss: 0.1093 | Val Acc: 97.62%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 14/44
+  Train Loss: 0.0200 | Train Acc: 99.34%
+  Val Loss: 0.1473 | Val Acc: 96.90%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 15/44
+  Train Loss: 0.0169 | Train Acc: 99.47%
+  Val Loss: 0.1006 | Val Acc: 98.06%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 16/44
+  Train Loss: 0.0168 | Train Acc: 99.48%
+  Val Loss: 0.1178 | Val Acc: 97.68%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 17/44
+  Train Loss: 0.0138 | Train Acc: 99.55%
+  Val Loss: 0.1259 | Val Acc: 97.48%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 18/44
+  Train Loss: 0.0147 | Train Acc: 99.55%
+  Val Loss: 0.1373 | Val Acc: 97.46%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 19/44
+  Train Loss: 0.0153 | Train Acc: 99.54%
+  Val Loss: 0.1328 | Val Acc: 97.70%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 20/44
+  Train Loss: 0.0133 | Train Acc: 99.56%
+  Val Loss: 0.1348 | Val Acc: 97.78%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 21/44
+  Train Loss: 0.0144 | Train Acc: 99.57%
+  Val Loss: 0.1372 | Val Acc: 97.64%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 22/44
+  Train Loss: 0.0101 | Train Acc: 99.69%
+  Val Loss: 0.1380 | Val Acc: 97.72%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 23/44
+  Train Loss: 0.0143 | Train Acc: 99.61%
+  Val Loss: 0.1524 | Val Acc: 97.70%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 24/44
+  Train Loss: 0.0089 | Train Acc: 99.74%
+  Val Loss: 0.1384 | Val Acc: 97.78%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 25/44
+  Train Loss: 0.0127 | Train Acc: 99.63%
+  Val Loss: 0.1851 | Val Acc: 97.48%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 26/44
+  Train Loss: 0.0135 | Train Acc: 99.63%
+  Val Loss: 0.1837 | Val Acc: 97.50%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 27/44
+  Train Loss: 0.0144 | Train Acc: 99.58%
+  Val Loss: 0.1721 | Val Acc: 97.60%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 28/44
+  Train Loss: 0.0080 | Train Acc: 99.75%
+  Val Loss: 0.1323 | Val Acc: 98.02%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 29/44
+  Train Loss: 0.0129 | Train Acc: 99.64%
+  Val Loss: 0.1752 | Val Acc: 97.42%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 30/44
+  Train Loss: 0.0106 | Train Acc: 99.64%
+  Val Loss: 0.1802 | Val Acc: 97.60%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 31/44
+  Train Loss: 0.0089 | Train Acc: 99.75%
+  Val Loss: 0.1657 | Val Acc: 97.74%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 32/44
+  Train Loss: 0.0123 | Train Acc: 99.64%
+  Val Loss: 0.2194 | Val Acc: 97.16%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 33/44
+  Train Loss: 0.0083 | Train Acc: 99.74%
+  Val Loss: 0.1775 | Val Acc: 97.86%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 34/44
+  Train Loss: 0.0088 | Train Acc: 99.73%
+  Val Loss: 0.1805 | Val Acc: 98.08%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 35/44
+  Train Loss: 0.0097 | Train Acc: 99.75%
+  Val Loss: 0.1962 | Val Acc: 97.72%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 36/44
+  Train Loss: 0.0126 | Train Acc: 99.69%
+  Val Loss: 0.1969 | Val Acc: 97.70%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 37/44
+  Train Loss: 0.0110 | Train Acc: 99.73%
+  Val Loss: 0.1888 | Val Acc: 97.86%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 38/44
+  Train Loss: 0.0090 | Train Acc: 99.73%
+  Val Loss: 0.1985 | Val Acc: 97.64%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 39/44
+  Train Loss: 0.0073 | Train Acc: 99.81%
+  Val Loss: 0.1985 | Val Acc: 97.64%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 40/44
+  Train Loss: 0.0107 | Train Acc: 99.74%
+  Val Loss: 0.2105 | Val Acc: 97.34%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 41/44
+  Train Loss: 0.0084 | Train Acc: 99.77%
+  Val Loss: 0.2007 | Val Acc: 97.68%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 42/44
+  Train Loss: 0.0108 | Train Acc: 99.74%
+  Val Loss: 0.2163 | Val Acc: 97.80%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 43/44
+  Train Loss: 0.0120 | Train Acc: 99.69%
+  Val Loss: 0.2298 | Val Acc: 97.36%
+  Best Val Loss: 0.0736 at iteration 6419
+
+Epoch 44/44
+  Train Loss: 0.0075 | Train Acc: 99.83%
+  Val Loss: 0.1849 | Val Acc: 97.86%
+  Best Val Loss: 0.0736 at iteration 6419
+
+============================================================
+Training Complete!
+  Final Test Accuracy: 97.96%
+  Best Validation Loss: 0.0736 at iteration 6419
+============================================================
+
+
+Round 11 Results:
+  Early-stop iteration: 6,419
+  Early-stop val accuracy: 97.74%
+  Final test accuracy: 97.96%
+  Training time: 390.5s
+
+Pruning 20.0% of remaining weights...
+New sparsity: 91.41% (8.59% remaining)
+✓ Weights reset to initial values (with current mask applied)
+
+======================================================================
+ROUND 12/15
+======================================================================
+Starting sparsity: 91.41% (8.59% weights remaining)
+
+============================================================
+Training Configuration:
+  Total iterations: 40,000
+  Epochs: 44
+  Learning rate: 0.0012
+  Optimizer: Adam
+  Device: cuda
+  Parameters: 266,610
+  Non-zero parameters: 22,872
+  Sparsity: 91.42%
+============================================================
+
+
+Epoch 1/44
+  Train Loss: 0.2302 | Train Acc: 93.11%
+  Val Loss: 0.1208 | Val Acc: 96.28%
+  Best Val Loss: 0.1208 at iteration 917
+
+Epoch 2/44
+  Train Loss: 0.0938 | Train Acc: 97.06%
+  Val Loss: 0.1015 | Val Acc: 96.88%
+  Best Val Loss: 0.1015 at iteration 1834
+
+Epoch 3/44
+  Train Loss: 0.0693 | Train Acc: 97.79%
+  Val Loss: 0.1151 | Val Acc: 96.14%
+  Best Val Loss: 0.1015 at iteration 1834
+
+Epoch 4/44
+  Train Loss: 0.0533 | Train Acc: 98.25%
+  Val Loss: 0.1274 | Val Acc: 95.86%
+  Best Val Loss: 0.1015 at iteration 1834
+
+Epoch 5/44
+  Train Loss: 0.0432 | Train Acc: 98.58%
+  Val Loss: 0.0852 | Val Acc: 97.66%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 6/44
+  Train Loss: 0.0382 | Train Acc: 98.76%
+  Val Loss: 0.0857 | Val Acc: 97.46%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 7/44
+  Train Loss: 0.0348 | Train Acc: 98.82%
+  Val Loss: 0.0868 | Val Acc: 97.54%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 8/44
+  Train Loss: 0.0267 | Train Acc: 99.13%
+  Val Loss: 0.0927 | Val Acc: 97.58%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 9/44
+  Train Loss: 0.0284 | Train Acc: 99.09%
+  Val Loss: 0.1074 | Val Acc: 97.30%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 10/44
+  Train Loss: 0.0231 | Train Acc: 99.26%
+  Val Loss: 0.1021 | Val Acc: 97.64%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 11/44
+  Train Loss: 0.0219 | Train Acc: 99.26%
+  Val Loss: 0.1044 | Val Acc: 97.62%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 12/44
+  Train Loss: 0.0225 | Train Acc: 99.27%
+  Val Loss: 0.0998 | Val Acc: 97.62%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 13/44
+  Train Loss: 0.0158 | Train Acc: 99.45%
+  Val Loss: 0.1095 | Val Acc: 97.82%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 14/44
+  Train Loss: 0.0178 | Train Acc: 99.46%
+  Val Loss: 0.1198 | Val Acc: 97.64%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 15/44
+  Train Loss: 0.0222 | Train Acc: 99.28%
+  Val Loss: 0.1239 | Val Acc: 97.70%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 16/44
+  Train Loss: 0.0147 | Train Acc: 99.53%
+  Val Loss: 0.1083 | Val Acc: 97.76%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 17/44
+  Train Loss: 0.0157 | Train Acc: 99.48%
+  Val Loss: 0.1395 | Val Acc: 97.56%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 18/44
+  Train Loss: 0.0163 | Train Acc: 99.47%
+  Val Loss: 0.1297 | Val Acc: 97.62%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 19/44
+  Train Loss: 0.0138 | Train Acc: 99.57%
+  Val Loss: 0.1149 | Val Acc: 97.88%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 20/44
+  Train Loss: 0.0122 | Train Acc: 99.61%
+  Val Loss: 0.1487 | Val Acc: 97.26%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 21/44
+  Train Loss: 0.0145 | Train Acc: 99.57%
+  Val Loss: 0.1375 | Val Acc: 97.74%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 22/44
+  Train Loss: 0.0140 | Train Acc: 99.61%
+  Val Loss: 0.1209 | Val Acc: 97.98%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 23/44
+  Train Loss: 0.0141 | Train Acc: 99.60%
+  Val Loss: 0.1334 | Val Acc: 97.62%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 24/44
+  Train Loss: 0.0099 | Train Acc: 99.68%
+  Val Loss: 0.1354 | Val Acc: 97.90%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 25/44
+  Train Loss: 0.0135 | Train Acc: 99.61%
+  Val Loss: 0.1593 | Val Acc: 97.80%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 26/44
+  Train Loss: 0.0137 | Train Acc: 99.57%
+  Val Loss: 0.1716 | Val Acc: 97.54%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 27/44
+  Train Loss: 0.0105 | Train Acc: 99.71%
+  Val Loss: 0.1325 | Val Acc: 97.74%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 28/44
+  Train Loss: 0.0123 | Train Acc: 99.67%
+  Val Loss: 0.1543 | Val Acc: 97.68%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 29/44
+  Train Loss: 0.0119 | Train Acc: 99.64%
+  Val Loss: 0.2004 | Val Acc: 97.32%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 30/44
+  Train Loss: 0.0117 | Train Acc: 99.66%
+  Val Loss: 0.1495 | Val Acc: 97.86%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 31/44
+  Train Loss: 0.0102 | Train Acc: 99.71%
+  Val Loss: 0.1948 | Val Acc: 97.62%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 32/44
+  Train Loss: 0.0090 | Train Acc: 99.76%
+  Val Loss: 0.1943 | Val Acc: 97.72%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 33/44
+  Train Loss: 0.0119 | Train Acc: 99.69%
+  Val Loss: 0.1934 | Val Acc: 97.68%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 34/44
+  Train Loss: 0.0095 | Train Acc: 99.73%
+  Val Loss: 0.1741 | Val Acc: 97.74%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 35/44
+  Train Loss: 0.0111 | Train Acc: 99.73%
+  Val Loss: 0.1565 | Val Acc: 97.70%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 36/44
+  Train Loss: 0.0102 | Train Acc: 99.73%
+  Val Loss: 0.1543 | Val Acc: 98.14%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 37/44
+  Train Loss: 0.0101 | Train Acc: 99.71%
+  Val Loss: 0.1806 | Val Acc: 97.86%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 38/44
+  Train Loss: 0.0107 | Train Acc: 99.70%
+  Val Loss: 0.1562 | Val Acc: 98.06%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 39/44
+  Train Loss: 0.0045 | Train Acc: 99.88%
+  Val Loss: 0.2080 | Val Acc: 97.62%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 40/44
+  Train Loss: 0.0148 | Train Acc: 99.64%
+  Val Loss: 0.1852 | Val Acc: 97.78%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 41/44
+  Train Loss: 0.0096 | Train Acc: 99.77%
+  Val Loss: 0.1725 | Val Acc: 97.92%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 42/44
+  Train Loss: 0.0101 | Train Acc: 99.73%
+  Val Loss: 0.2586 | Val Acc: 97.26%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 43/44
+  Train Loss: 0.0112 | Train Acc: 99.73%
+  Val Loss: 0.2157 | Val Acc: 97.72%
+  Best Val Loss: 0.0852 at iteration 4585
+
+Epoch 44/44
+  Train Loss: 0.0087 | Train Acc: 99.79%
+  Val Loss: 0.1886 | Val Acc: 97.96%
+  Best Val Loss: 0.0852 at iteration 4585
+
+============================================================
+Training Complete!
+  Final Test Accuracy: 97.72%
+  Best Validation Loss: 0.0852 at iteration 4585
+============================================================
+
+
+Round 12 Results:
+  Early-stop iteration: 4,585
+  Early-stop val accuracy: 97.66%
+  Final test accuracy: 97.72%
+  Training time: 391.6s
+
+Pruning 20.0% of remaining weights...
+New sparsity: 93.13% (6.87% remaining)
+✓ Weights reset to initial values (with current mask applied)
+
+======================================================================
+ROUND 13/15
+======================================================================
+Starting sparsity: 93.13% (6.87% weights remaining)
+
+============================================================
+Training Configuration:
+  Total iterations: 40,000
+  Epochs: 44
+  Learning rate: 0.0012
+  Optimizer: Adam
+  Device: cuda
+  Parameters: 266,610
+  Non-zero parameters: 18,299
+  Sparsity: 93.14%
+============================================================
+
+
+Epoch 1/44
+  Train Loss: 0.2326 | Train Acc: 93.03%
+  Val Loss: 0.1323 | Val Acc: 96.18%
+  Best Val Loss: 0.1323 at iteration 917
+
+Epoch 2/44
+  Train Loss: 0.0972 | Train Acc: 96.94%
+  Val Loss: 0.1190 | Val Acc: 96.42%
+  Best Val Loss: 0.1190 at iteration 1834
+
+Epoch 3/44
+  Train Loss: 0.0691 | Train Acc: 97.81%
+  Val Loss: 0.0936 | Val Acc: 96.84%
+  Best Val Loss: 0.0936 at iteration 2751
+
+Epoch 4/44
+  Train Loss: 0.0523 | Train Acc: 98.34%
+  Val Loss: 0.0896 | Val Acc: 97.30%
+  Best Val Loss: 0.0896 at iteration 3668
+
+Epoch 5/44
+  Train Loss: 0.0457 | Train Acc: 98.48%
+  Val Loss: 0.0921 | Val Acc: 97.36%
+  Best Val Loss: 0.0896 at iteration 3668
+
+Epoch 6/44
+  Train Loss: 0.0392 | Train Acc: 98.71%
+  Val Loss: 0.1107 | Val Acc: 97.12%
+  Best Val Loss: 0.0896 at iteration 3668
+
+Epoch 7/44
+  Train Loss: 0.0307 | Train Acc: 98.98%
+  Val Loss: 0.0940 | Val Acc: 97.38%
+  Best Val Loss: 0.0896 at iteration 3668
+
+Epoch 8/44
+  Train Loss: 0.0268 | Train Acc: 99.08%
+  Val Loss: 0.0877 | Val Acc: 97.76%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 9/44
+  Train Loss: 0.0266 | Train Acc: 99.13%
+  Val Loss: 0.1009 | Val Acc: 97.46%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 10/44
+  Train Loss: 0.0246 | Train Acc: 99.19%
+  Val Loss: 0.0904 | Val Acc: 97.82%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 11/44
+  Train Loss: 0.0215 | Train Acc: 99.30%
+  Val Loss: 0.1173 | Val Acc: 97.46%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 12/44
+  Train Loss: 0.0206 | Train Acc: 99.31%
+  Val Loss: 0.1043 | Val Acc: 97.58%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 13/44
+  Train Loss: 0.0160 | Train Acc: 99.47%
+  Val Loss: 0.1128 | Val Acc: 97.86%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 14/44
+  Train Loss: 0.0179 | Train Acc: 99.40%
+  Val Loss: 0.1267 | Val Acc: 97.60%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 15/44
+  Train Loss: 0.0200 | Train Acc: 99.38%
+  Val Loss: 0.1419 | Val Acc: 97.48%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 16/44
+  Train Loss: 0.0160 | Train Acc: 99.49%
+  Val Loss: 0.1174 | Val Acc: 97.64%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 17/44
+  Train Loss: 0.0138 | Train Acc: 99.56%
+  Val Loss: 0.1362 | Val Acc: 97.52%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 18/44
+  Train Loss: 0.0144 | Train Acc: 99.58%
+  Val Loss: 0.1369 | Val Acc: 97.62%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 19/44
+  Train Loss: 0.0142 | Train Acc: 99.57%
+  Val Loss: 0.1520 | Val Acc: 97.58%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 20/44
+  Train Loss: 0.0173 | Train Acc: 99.48%
+  Val Loss: 0.1304 | Val Acc: 97.70%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 21/44
+  Train Loss: 0.0118 | Train Acc: 99.65%
+  Val Loss: 0.1581 | Val Acc: 97.18%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 22/44
+  Train Loss: 0.0149 | Train Acc: 99.55%
+  Val Loss: 0.1594 | Val Acc: 97.54%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 23/44
+  Train Loss: 0.0122 | Train Acc: 99.64%
+  Val Loss: 0.1496 | Val Acc: 97.66%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 24/44
+  Train Loss: 0.0130 | Train Acc: 99.62%
+  Val Loss: 0.1276 | Val Acc: 97.72%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 25/44
+  Train Loss: 0.0116 | Train Acc: 99.69%
+  Val Loss: 0.1679 | Val Acc: 97.58%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 26/44
+  Train Loss: 0.0166 | Train Acc: 99.53%
+  Val Loss: 0.1494 | Val Acc: 97.60%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 27/44
+  Train Loss: 0.0088 | Train Acc: 99.72%
+  Val Loss: 0.1413 | Val Acc: 97.58%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 28/44
+  Train Loss: 0.0115 | Train Acc: 99.66%
+  Val Loss: 0.1715 | Val Acc: 97.48%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 29/44
+  Train Loss: 0.0112 | Train Acc: 99.67%
+  Val Loss: 0.1546 | Val Acc: 97.88%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 30/44
+  Train Loss: 0.0115 | Train Acc: 99.70%
+  Val Loss: 0.1708 | Val Acc: 97.58%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 31/44
+  Train Loss: 0.0108 | Train Acc: 99.69%
+  Val Loss: 0.1636 | Val Acc: 97.82%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 32/44
+  Train Loss: 0.0085 | Train Acc: 99.72%
+  Val Loss: 0.1701 | Val Acc: 97.60%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 33/44
+  Train Loss: 0.0133 | Train Acc: 99.67%
+  Val Loss: 0.1753 | Val Acc: 97.54%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 34/44
+  Train Loss: 0.0083 | Train Acc: 99.77%
+  Val Loss: 0.1547 | Val Acc: 97.92%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 35/44
+  Train Loss: 0.0113 | Train Acc: 99.67%
+  Val Loss: 0.1551 | Val Acc: 97.72%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 36/44
+  Train Loss: 0.0088 | Train Acc: 99.77%
+  Val Loss: 0.1663 | Val Acc: 97.62%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 37/44
+  Train Loss: 0.0090 | Train Acc: 99.75%
+  Val Loss: 0.1768 | Val Acc: 97.64%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 38/44
+  Train Loss: 0.0106 | Train Acc: 99.71%
+  Val Loss: 0.1771 | Val Acc: 97.92%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 39/44
+  Train Loss: 0.0091 | Train Acc: 99.74%
+  Val Loss: 0.1635 | Val Acc: 97.82%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 40/44
+  Train Loss: 0.0027 | Train Acc: 99.89%
+  Val Loss: 0.1915 | Val Acc: 97.82%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 41/44
+  Train Loss: 0.0177 | Train Acc: 99.56%
+  Val Loss: 0.1863 | Val Acc: 97.84%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 42/44
+  Train Loss: 0.0061 | Train Acc: 99.82%
+  Val Loss: 0.1599 | Val Acc: 97.98%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 43/44
+  Train Loss: 0.0123 | Train Acc: 99.72%
+  Val Loss: 0.2189 | Val Acc: 97.56%
+  Best Val Loss: 0.0877 at iteration 7336
+
+Epoch 44/44
+  Train Loss: 0.0116 | Train Acc: 99.71%
+  Val Loss: 0.1759 | Val Acc: 97.90%
+  Best Val Loss: 0.0877 at iteration 7336
+
+============================================================
+Training Complete!
+  Final Test Accuracy: 97.89%
+  Best Validation Loss: 0.0877 at iteration 7336
+============================================================
+
+
+Round 13 Results:
+  Early-stop iteration: 7,336
+  Early-stop val accuracy: 97.76%
+  Final test accuracy: 97.89%
+  Training time: 390.2s
+
+Pruning 20.0% of remaining weights...
+New sparsity: 94.50% (5.50% remaining)
+✓ Weights reset to initial values (with current mask applied)
+
+======================================================================
+ROUND 14/15
+======================================================================
+Starting sparsity: 94.50% (5.50% weights remaining)
+
+============================================================
+Training Configuration:
+  Total iterations: 40,000
+  Epochs: 44
+  Learning rate: 0.0012
+  Optimizer: Adam
+  Device: cuda
+  Parameters: 266,610
+  Non-zero parameters: 14,641
+  Sparsity: 94.51%
+============================================================
+
+
+Epoch 1/44
+  Train Loss: 0.2452 | Train Acc: 92.58%
+  Val Loss: 0.1361 | Val Acc: 95.62%
+  Best Val Loss: 0.1361 at iteration 917
+
+Epoch 2/44
+  Train Loss: 0.0996 | Train Acc: 96.96%
+  Val Loss: 0.1085 | Val Acc: 96.88%
+  Best Val Loss: 0.1085 at iteration 1834
+
+Epoch 3/44
+  Train Loss: 0.0724 | Train Acc: 97.65%
+  Val Loss: 0.1095 | Val Acc: 96.72%
+  Best Val Loss: 0.1085 at iteration 1834
+
+Epoch 4/44
+  Train Loss: 0.0569 | Train Acc: 98.14%
+  Val Loss: 0.1006 | Val Acc: 97.34%
+  Best Val Loss: 0.1006 at iteration 3668
+
+Epoch 5/44
+  Train Loss: 0.0454 | Train Acc: 98.55%
+  Val Loss: 0.0920 | Val Acc: 97.34%
+  Best Val Loss: 0.0920 at iteration 4585
+
+Epoch 6/44
+  Train Loss: 0.0389 | Train Acc: 98.68%
+  Val Loss: 0.0827 | Val Acc: 97.78%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 7/44
+  Train Loss: 0.0307 | Train Acc: 98.95%
+  Val Loss: 0.1004 | Val Acc: 97.26%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 8/44
+  Train Loss: 0.0302 | Train Acc: 98.97%
+  Val Loss: 0.1085 | Val Acc: 97.50%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 9/44
+  Train Loss: 0.0269 | Train Acc: 99.12%
+  Val Loss: 0.1053 | Val Acc: 97.30%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 10/44
+  Train Loss: 0.0258 | Train Acc: 99.15%
+  Val Loss: 0.1016 | Val Acc: 97.22%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 11/44
+  Train Loss: 0.0212 | Train Acc: 99.29%
+  Val Loss: 0.1325 | Val Acc: 97.18%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 12/44
+  Train Loss: 0.0225 | Train Acc: 99.28%
+  Val Loss: 0.1321 | Val Acc: 97.40%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 13/44
+  Train Loss: 0.0162 | Train Acc: 99.49%
+  Val Loss: 0.1068 | Val Acc: 97.98%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 14/44
+  Train Loss: 0.0188 | Train Acc: 99.42%
+  Val Loss: 0.1300 | Val Acc: 97.52%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 15/44
+  Train Loss: 0.0146 | Train Acc: 99.50%
+  Val Loss: 0.1178 | Val Acc: 97.82%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 16/44
+  Train Loss: 0.0168 | Train Acc: 99.48%
+  Val Loss: 0.1223 | Val Acc: 97.58%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 17/44
+  Train Loss: 0.0171 | Train Acc: 99.48%
+  Val Loss: 0.1543 | Val Acc: 96.94%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 18/44
+  Train Loss: 0.0154 | Train Acc: 99.49%
+  Val Loss: 0.1359 | Val Acc: 97.46%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 19/44
+  Train Loss: 0.0137 | Train Acc: 99.56%
+  Val Loss: 0.1416 | Val Acc: 97.58%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 20/44
+  Train Loss: 0.0140 | Train Acc: 99.56%
+  Val Loss: 0.1436 | Val Acc: 97.48%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 21/44
+  Train Loss: 0.0146 | Train Acc: 99.57%
+  Val Loss: 0.1279 | Val Acc: 97.60%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 22/44
+  Train Loss: 0.0111 | Train Acc: 99.65%
+  Val Loss: 0.1730 | Val Acc: 96.90%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 23/44
+  Train Loss: 0.0145 | Train Acc: 99.55%
+  Val Loss: 0.1937 | Val Acc: 97.02%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 24/44
+  Train Loss: 0.0122 | Train Acc: 99.63%
+  Val Loss: 0.1561 | Val Acc: 97.78%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 25/44
+  Train Loss: 0.0134 | Train Acc: 99.62%
+  Val Loss: 0.1872 | Val Acc: 97.44%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 26/44
+  Train Loss: 0.0108 | Train Acc: 99.68%
+  Val Loss: 0.1893 | Val Acc: 97.38%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 27/44
+  Train Loss: 0.0124 | Train Acc: 99.64%
+  Val Loss: 0.1841 | Val Acc: 97.46%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 28/44
+  Train Loss: 0.0113 | Train Acc: 99.66%
+  Val Loss: 0.1845 | Val Acc: 97.38%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 29/44
+  Train Loss: 0.0128 | Train Acc: 99.60%
+  Val Loss: 0.1355 | Val Acc: 97.90%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 30/44
+  Train Loss: 0.0101 | Train Acc: 99.69%
+  Val Loss: 0.1775 | Val Acc: 97.58%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 31/44
+  Train Loss: 0.0091 | Train Acc: 99.72%
+  Val Loss: 0.1830 | Val Acc: 97.44%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 32/44
+  Train Loss: 0.0108 | Train Acc: 99.70%
+  Val Loss: 0.1958 | Val Acc: 97.70%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 33/44
+  Train Loss: 0.0100 | Train Acc: 99.75%
+  Val Loss: 0.1847 | Val Acc: 97.74%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 34/44
+  Train Loss: 0.0093 | Train Acc: 99.76%
+  Val Loss: 0.1908 | Val Acc: 97.58%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 35/44
+  Train Loss: 0.0117 | Train Acc: 99.67%
+  Val Loss: 0.1793 | Val Acc: 97.62%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 36/44
+  Train Loss: 0.0125 | Train Acc: 99.65%
+  Val Loss: 0.1673 | Val Acc: 97.76%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 37/44
+  Train Loss: 0.0070 | Train Acc: 99.78%
+  Val Loss: 0.1919 | Val Acc: 97.50%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 38/44
+  Train Loss: 0.0073 | Train Acc: 99.78%
+  Val Loss: 0.1861 | Val Acc: 97.70%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 39/44
+  Train Loss: 0.0118 | Train Acc: 99.69%
+  Val Loss: 0.2318 | Val Acc: 97.66%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 40/44
+  Train Loss: 0.0095 | Train Acc: 99.77%
+  Val Loss: 0.2012 | Val Acc: 97.70%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 41/44
+  Train Loss: 0.0103 | Train Acc: 99.74%
+  Val Loss: 0.2022 | Val Acc: 98.04%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 42/44
+  Train Loss: 0.0111 | Train Acc: 99.70%
+  Val Loss: 0.1938 | Val Acc: 97.60%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 43/44
+  Train Loss: 0.0055 | Train Acc: 99.84%
+  Val Loss: 0.1922 | Val Acc: 97.76%
+  Best Val Loss: 0.0827 at iteration 5502
+
+Epoch 44/44
+  Train Loss: 0.0042 | Train Acc: 99.87%
+  Val Loss: 0.1696 | Val Acc: 98.02%
+  Best Val Loss: 0.0827 at iteration 5502
+
+============================================================
+Training Complete!
+  Final Test Accuracy: 98.28%
+  Best Validation Loss: 0.0827 at iteration 5502
+============================================================
+
+
+Round 14 Results:
+  Early-stop iteration: 5,502
+  Early-stop val accuracy: 97.78%
+  Final test accuracy: 98.28%
+  Training time: 386.7s
+
+Pruning 20.0% of remaining weights...
+New sparsity: 95.60% (4.40% remaining)
+✓ Weights reset to initial values (with current mask applied)
+
+======================================================================
+ROUND 15/15
+======================================================================
+Starting sparsity: 95.60% (4.40% weights remaining)
+
+============================================================
+Training Configuration:
+  Total iterations: 40,000
+  Epochs: 44
+  Learning rate: 0.0012
+  Optimizer: Adam
+  Device: cuda
+  Parameters: 266,610
+  Non-zero parameters: 11,714
+  Sparsity: 95.61%
+============================================================
+
+
+Epoch 1/44
+  Train Loss: 0.2539 | Train Acc: 92.35%
+  Val Loss: 0.1396 | Val Acc: 95.84%
+  Best Val Loss: 0.1396 at iteration 917
+
+Epoch 2/44
+  Train Loss: 0.1011 | Train Acc: 96.86%
+  Val Loss: 0.1086 | Val Acc: 96.46%
+  Best Val Loss: 0.1086 at iteration 1834
+
+Epoch 3/44
+  Train Loss: 0.0704 | Train Acc: 97.77%
+  Val Loss: 0.1056 | Val Acc: 96.74%
+  Best Val Loss: 0.1056 at iteration 2751
+
+Epoch 4/44
+  Train Loss: 0.0550 | Train Acc: 98.24%
+  Val Loss: 0.0976 | Val Acc: 97.30%
+  Best Val Loss: 0.0976 at iteration 3668
+
+Epoch 5/44
+  Train Loss: 0.0447 | Train Acc: 98.53%
+  Val Loss: 0.1092 | Val Acc: 96.92%
+  Best Val Loss: 0.0976 at iteration 3668
+
+Epoch 6/44
+  Train Loss: 0.0385 | Train Acc: 98.76%
+  Val Loss: 0.0912 | Val Acc: 97.38%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 7/44
+  Train Loss: 0.0328 | Train Acc: 98.91%
+  Val Loss: 0.1027 | Val Acc: 97.28%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 8/44
+  Train Loss: 0.0276 | Train Acc: 99.09%
+  Val Loss: 0.1148 | Val Acc: 97.44%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 9/44
+  Train Loss: 0.0260 | Train Acc: 99.10%
+  Val Loss: 0.1122 | Val Acc: 97.38%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 10/44
+  Train Loss: 0.0256 | Train Acc: 99.14%
+  Val Loss: 0.1042 | Val Acc: 97.36%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 11/44
+  Train Loss: 0.0227 | Train Acc: 99.27%
+  Val Loss: 0.1221 | Val Acc: 97.46%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 12/44
+  Train Loss: 0.0191 | Train Acc: 99.34%
+  Val Loss: 0.1502 | Val Acc: 96.78%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 13/44
+  Train Loss: 0.0202 | Train Acc: 99.34%
+  Val Loss: 0.1362 | Val Acc: 96.90%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 14/44
+  Train Loss: 0.0175 | Train Acc: 99.44%
+  Val Loss: 0.1198 | Val Acc: 97.68%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 15/44
+  Train Loss: 0.0166 | Train Acc: 99.45%
+  Val Loss: 0.1137 | Val Acc: 97.62%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 16/44
+  Train Loss: 0.0176 | Train Acc: 99.39%
+  Val Loss: 0.1117 | Val Acc: 97.84%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 17/44
+  Train Loss: 0.0160 | Train Acc: 99.48%
+  Val Loss: 0.1380 | Val Acc: 97.56%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 18/44
+  Train Loss: 0.0140 | Train Acc: 99.53%
+  Val Loss: 0.1302 | Val Acc: 97.40%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 19/44
+  Train Loss: 0.0128 | Train Acc: 99.59%
+  Val Loss: 0.1319 | Val Acc: 97.52%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 20/44
+  Train Loss: 0.0123 | Train Acc: 99.64%
+  Val Loss: 0.1562 | Val Acc: 97.28%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 21/44
+  Train Loss: 0.0144 | Train Acc: 99.60%
+  Val Loss: 0.1400 | Val Acc: 97.54%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 22/44
+  Train Loss: 0.0139 | Train Acc: 99.57%
+  Val Loss: 0.1268 | Val Acc: 98.08%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 23/44
+  Train Loss: 0.0122 | Train Acc: 99.61%
+  Val Loss: 0.1652 | Val Acc: 97.72%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 24/44
+  Train Loss: 0.0122 | Train Acc: 99.68%
+  Val Loss: 0.1372 | Val Acc: 97.78%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 25/44
+  Train Loss: 0.0109 | Train Acc: 99.66%
+  Val Loss: 0.1464 | Val Acc: 97.82%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 26/44
+  Train Loss: 0.0126 | Train Acc: 99.63%
+  Val Loss: 0.1570 | Val Acc: 97.74%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 27/44
+  Train Loss: 0.0136 | Train Acc: 99.60%
+  Val Loss: 0.1428 | Val Acc: 97.86%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 28/44
+  Train Loss: 0.0082 | Train Acc: 99.76%
+  Val Loss: 0.1696 | Val Acc: 97.36%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 29/44
+  Train Loss: 0.0109 | Train Acc: 99.67%
+  Val Loss: 0.1531 | Val Acc: 97.78%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 30/44
+  Train Loss: 0.0140 | Train Acc: 99.58%
+  Val Loss: 0.1809 | Val Acc: 97.34%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 31/44
+  Train Loss: 0.0106 | Train Acc: 99.70%
+  Val Loss: 0.1601 | Val Acc: 97.72%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 32/44
+  Train Loss: 0.0097 | Train Acc: 99.73%
+  Val Loss: 0.1856 | Val Acc: 97.56%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 33/44
+  Train Loss: 0.0086 | Train Acc: 99.76%
+  Val Loss: 0.1448 | Val Acc: 97.80%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 34/44
+  Train Loss: 0.0138 | Train Acc: 99.66%
+  Val Loss: 0.1704 | Val Acc: 97.92%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 35/44
+  Train Loss: 0.0105 | Train Acc: 99.69%
+  Val Loss: 0.1713 | Val Acc: 98.08%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 36/44
+  Train Loss: 0.0067 | Train Acc: 99.78%
+  Val Loss: 0.2222 | Val Acc: 97.56%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 37/44
+  Train Loss: 0.0122 | Train Acc: 99.67%
+  Val Loss: 0.1780 | Val Acc: 97.92%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 38/44
+  Train Loss: 0.0096 | Train Acc: 99.74%
+  Val Loss: 0.1889 | Val Acc: 97.76%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 39/44
+  Train Loss: 0.0123 | Train Acc: 99.68%
+  Val Loss: 0.1755 | Val Acc: 97.96%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 40/44
+  Train Loss: 0.0095 | Train Acc: 99.75%
+  Val Loss: 0.1956 | Val Acc: 97.60%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 41/44
+  Train Loss: 0.0115 | Train Acc: 99.69%
+  Val Loss: 0.1671 | Val Acc: 97.90%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 42/44
+  Train Loss: 0.0042 | Train Acc: 99.88%
+  Val Loss: 0.1972 | Val Acc: 97.78%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 43/44
+  Train Loss: 0.0085 | Train Acc: 99.75%
+  Val Loss: 0.1819 | Val Acc: 97.88%
+  Best Val Loss: 0.0912 at iteration 5502
+
+Epoch 44/44
+  Train Loss: 0.0105 | Train Acc: 99.76%
+  Val Loss: 0.2230 | Val Acc: 97.52%
+  Best Val Loss: 0.0912 at iteration 5502
+
+============================================================
+Training Complete!
+  Final Test Accuracy: 97.79%
+  Best Validation Loss: 0.0912 at iteration 5502
+============================================================
+
+
+Round 15 Results:
+  Early-stop iteration: 5,502
+  Early-stop val accuracy: 97.38%
+  Final test accuracy: 97.79%
+  Training time: 388.1s
+
+======================================================================
+EXPERIMENT SUMMARY
+======================================================================
+
+Round    Remaining%   Early-Stop   Val Acc%   Test Acc% 
+----------------------------------------------------------------------
+1        100.00       6,419        97.54      98.03     
+2        80.00        3,668        97.62      97.82     
+3        64.00        4,585        98.02      98.25     
+4        51.20        3,668        97.24      97.64     
+5        40.96        3,668        97.40      98.03     
+6        32.77        9,170        97.78      98.06     
+7        26.22        5,502        97.84      98.09     
+8        20.97        4,585        97.78      97.96     
+9        16.78        7,336        97.82      97.79     
+10       13.42        3,668        97.32      97.79     
+11       10.74        6,419        97.74      97.96     
+12       8.59         4,585        97.66      97.72     
+13       6.87         7,336        97.76      97.89     
+14       5.50         5,502        97.78      98.28     
+15       4.40         5,502        97.38      97.79     
+======================================================================
+
+✓ Results saved to results/full_experiment_40k.json
+
+✓ COMPLETE! Total time: 97.3 minutes (1.62 hours)

@@ -4,6 +4,7 @@ import torch.optim as optim
 import time
 import sys
 from pathlib import Path
+from datetime import datetime
 
 # Add project root to Python path
 project_root = Path(__file__).parent.parent
@@ -14,12 +15,22 @@ class Trainer:
     """
     Trainer class for neural network training and evaluation
     """
-    def __init__(self, model, device, train_loader, val_loader, test_loader):
+    def __init__(self, model, device, train_loader, val_loader, test_loader, log_file=None):
         self.model = model
         self.device = device
         self.train_loader = train_loader
         self.val_loader = val_loader
         self.test_loader = test_loader
+        
+        # Setup logging
+        self.log_file = log_file
+        if self.log_file:
+            log_path = Path(self.log_file)
+            log_path.parent.mkdir(parents=True, exist_ok=True)
+            # Create/clear log file and write header
+            with open(self.log_file, 'w') as f:
+                f.write(f"Training Log - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+                f.write("="*60 + "\n\n")
         
         # Move model to device
         self.model.to(self.device)
@@ -36,6 +47,13 @@ class Trainer:
             'test_acc': [],
             'iteration': []
         }
+    
+    def log(self, message):
+        """Print message and save to log file if specified"""
+        print(message)
+        if self.log_file:
+            with open(self.log_file, 'a') as f:
+                f.write(message + '\n')
     
     def train_epoch(self, optimizer):
         """Train for one epoch"""
@@ -109,24 +127,24 @@ class Trainer:
         iterations_per_epoch = len(self.train_loader)
         num_epochs = (num_iterations + iterations_per_epoch - 1) // iterations_per_epoch
         
-        print(f"\n{'='*60}")
-        print(f"Training Configuration:")
-        print(f"  Total iterations: {num_iterations:,}")
-        print(f"  Epochs: {num_epochs}")
-        print(f"  Learning rate: {learning_rate}")
-        print(f"  Optimizer: Adam")
-        print(f"  Device: {self.device}")
-        print(f"  Parameters: {self.model.count_parameters():,}")
-        print(f"  Non-zero parameters: {self.model.count_nonzero_parameters():,}")
-        print(f"  Sparsity: {self.model.get_sparsity():.2f}%")
-        print(f"{'='*60}\n")
+        self.log(f"\n{'='*60}")
+        self.log(f"Training Configuration:")
+        self.log(f"  Total iterations: {num_iterations:,}")
+        self.log(f"  Epochs: {num_epochs}")
+        self.log(f"  Learning rate: {learning_rate}")
+        self.log(f"  Optimizer: Adam")
+        self.log(f"  Device: {self.device}")
+        self.log(f"  Parameters: {self.model.count_parameters():,}")
+        self.log(f"  Non-zero parameters: {self.model.count_nonzero_parameters():,}")
+        self.log(f"  Sparsity: {self.model.get_sparsity():.2f}%")
+        self.log(f"{'='*60}\n")
         
         iteration = 0
         best_val_loss = float('inf')
         best_val_iteration = 0
         
         for epoch in range(num_epochs):
-            print(f"\nEpoch {epoch+1}/{num_epochs}")
+            self.log(f"\nEpoch {epoch+1}/{num_epochs}")
             
             # Train one epoch
             train_loss, train_acc = self.train_epoch(optimizer)
@@ -147,9 +165,9 @@ class Trainer:
             self.history['val_acc'].append(val_acc)
             self.history['iteration'].append(iteration)
             
-            print(f"  Train Loss: {train_loss:.4f} | Train Acc: {train_acc:.2f}%")
-            print(f"  Val Loss: {val_loss:.4f} | Val Acc: {val_acc:.2f}%")
-            print(f"  Best Val Loss: {best_val_loss:.4f} at iteration {best_val_iteration}")
+            self.log(f"  Train Loss: {train_loss:.4f} | Train Acc: {train_acc:.2f}%")
+            self.log(f"  Val Loss: {val_loss:.4f} | Val Acc: {val_acc:.2f}%")
+            self.log(f"  Best Val Loss: {best_val_loss:.4f} at iteration {best_val_iteration}")
             
             # Stop if we've exceeded target iterations
             if iteration >= num_iterations:
@@ -159,11 +177,11 @@ class Trainer:
         test_loss, test_acc = self.evaluate(self.test_loader, desc='Test')
         self.history['test_acc'].append(test_acc)
         
-        print(f"\n{'='*60}")
-        print(f"Training Complete!")
-        print(f"  Final Test Accuracy: {test_acc:.2f}%")
-        print(f"  Best Validation Loss: {best_val_loss:.4f} at iteration {best_val_iteration}")
-        print(f"{'='*60}\n")
+        self.log(f"\n{'='*60}")
+        self.log(f"Training Complete!")
+        self.log(f"  Final Test Accuracy: {test_acc:.2f}%")
+        self.log(f"  Best Validation Loss: {best_val_loss:.4f} at iteration {best_val_iteration}")
+        self.log(f"{'='*60}\n")
         
         return {
             'best_val_loss': best_val_loss,
