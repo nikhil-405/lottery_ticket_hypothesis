@@ -1,0 +1,136 @@
+{
+  "config": {
+    "pruning_rate": 0.95,
+    "num_rounds": 3,
+    "training_iterations": 2000,
+    "learning_rate": 0.0012,
+    "batch_size": 60,
+    "device": "cpu"
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "sparsity_before_pruning": 0.0,
+      "remaining_pct_before_pruning": 100.0,
+      "best_val_loss": 0.053372334356286695,
+      "best_val_iteration": 1834,
+      "early_stop_val_acc": 98.34,
+      "final_test_acc": 98.8,
+      "training_time": 33.10735893249512,
+      "history": {
+        "train_loss": [
+          0.1948414052605036,
+          0.06030948104965526,
+          0.04526248688717152
+        ],
+        "train_acc": [
+          94.00727272727272,
+          98.17272727272727,
+          98.57636363636364
+        ],
+        "val_loss": [
+          0.08045643072996643,
+          0.053372334356286695,
+          0.05559203980789919
+        ],
+        "val_acc": [
+          97.44,
+          98.34,
+          98.26
+        ],
+        "test_acc": [
+          98.8
+        ],
+        "iteration": [
+          917,
+          1834,
+          2751
+        ]
+      },
+      "sparsity_after_pruning": 94.99886852229011,
+      "remaining_pct_after_pruning": 5.00113147770989
+    },
+    {
+      "round": 2,
+      "sparsity_before_pruning": 94.99886852229011,
+      "remaining_pct_before_pruning": 5.00113147770989,
+      "best_val_loss": 0.3262688320662294,
+      "best_val_iteration": 2751,
+      "early_stop_val_acc": 90.72,
+      "final_test_acc": 91.58,
+      "training_time": 31.310880184173584,
+      "history": {
+        "train_loss": [
+          1.1905845665294705,
+          0.47712778877730977,
+          0.3526463629586486
+        ],
+        "train_acc": [
+          63.17272727272727,
+          87.51818181818182,
+          90.16909090909091
+        ],
+        "val_loss": [
+          0.6298212469333694,
+          0.40660752444749787,
+          0.3262688320662294
+        ],
+        "val_acc": [
+          84.08,
+          88.96,
+          90.72
+        ],
+        "test_acc": [
+          91.58
+        ],
+        "iteration": [
+          917,
+          1834,
+          2751
+        ]
+      },
+      "sparsity_after_pruning": 99.74428603756506,
+      "remaining_pct_after_pruning": 0.25571396243493894
+    },
+    {
+      "round": 3,
+      "sparsity_before_pruning": 99.74428603756506,
+      "remaining_pct_before_pruning": 0.25571396243493894,
+      "best_val_loss": 2.300584165822892,
+      "best_val_iteration": 1834,
+      "early_stop_val_acc": 11.04,
+      "final_test_acc": 11.35,
+      "training_time": 30.939927101135254,
+      "history": {
+        "train_loss": [
+          2.301605172609685,
+          2.3013866852517997,
+          2.3014101805317755
+        ],
+        "train_acc": [
+          11.15090909090909,
+          11.254545454545454,
+          11.254545454545454
+        ],
+        "val_loss": [
+          2.300611899012611,
+          2.300584165822892,
+          2.3007320250783647
+        ],
+        "val_acc": [
+          11.04,
+          11.04,
+          11.04
+        ],
+        "test_acc": [
+          11.35
+        ],
+        "iteration": [
+          917,
+          1834,
+          2751
+        ]
+      }
+    }
+  ]
+}
