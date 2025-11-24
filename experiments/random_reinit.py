@@ -25,9 +25,11 @@ class RandomReinitExperiment(LotteryTicketExperiment):
         print("Weights will be randomly reinitialized after each pruning round\n")
         
         # Load data
+        dataset_name = "Fashion-MNIST" if self.fashion else "MNIST"
+        print(f"Loading {dataset_name}...")
         train_loader, val_loader, test_loader = get_mnist_dataloaders(
             batch_size=self.batch_size,
-            fashion=True
+            fashion=self.fashion
         )
         
         # Create model
@@ -53,7 +55,8 @@ class RandomReinitExperiment(LotteryTicketExperiment):
             trainer = Trainer(model, self.device, train_loader, val_loader, test_loader)
             train_results = trainer.train(
                 num_iterations=self.training_iterations,
-                learning_rate=self.learning_rate
+                learning_rate=self.learning_rate,
+                pruner=pruner
             )
             
             early_stop_iter = trainer.get_early_stopping_iteration()
@@ -92,6 +95,9 @@ class RandomReinitExperiment(LotteryTicketExperiment):
                 # Reinitialize the model with NEW random weights
                 model = LeNet300100()
                 model.to(self.device)
+                
+                # Update pruner's model reference
+                pruner.model = model
                 
                 # Apply the SAME mask to the new random weights
                 for name, param in model.named_parameters():

@@ -26,7 +26,8 @@ class LotteryTicketExperiment:
                  training_iterations=50000,
                  learning_rate=0.0012,
                  batch_size=60,
-                 device=None):
+                 device=None,
+                 fashion=True):
         """
         Args:
             pruning_rate: Fraction of weights to prune each round (default: 20%)
@@ -35,12 +36,14 @@ class LotteryTicketExperiment:
             learning_rate: Adam learning rate (default: 0.0012)
             batch_size: Batch size (default: 60)
             device: Device to use (auto-detect if None)
+            fashion: Use Fashion-MNIST if True, MNIST if False (default: True)
         """
         self.pruning_rate = pruning_rate
         self.num_rounds = num_rounds
         self.training_iterations = training_iterations
         self.learning_rate = learning_rate
         self.batch_size = batch_size
+        self.fashion = fashion
         
         # Device setup
         if device is None:
@@ -76,9 +79,11 @@ class LotteryTicketExperiment:
         """Run the complete iterative pruning experiment"""
         
         # Load data
+        dataset_name = "Fashion-MNIST" if self.fashion else "MNIST"
+        print(f"Loading {dataset_name}...")
         train_loader, val_loader, test_loader = get_mnist_dataloaders(
             batch_size=self.batch_size,
-            fashion=True
+            fashion=self.fashion
         )
         
         # Create model
@@ -110,7 +115,8 @@ class LotteryTicketExperiment:
             # Train
             train_results = trainer.train(
                 num_iterations=self.training_iterations,
-                learning_rate=self.learning_rate
+                learning_rate=self.learning_rate,
+                pruner=pruner
             )
             
             # Get early stopping iteration

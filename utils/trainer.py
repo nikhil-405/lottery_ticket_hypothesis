@@ -37,7 +37,7 @@ class Trainer:
             'iteration': []
         }
     
-    def train_epoch(self, optimizer):
+    def train_epoch(self, optimizer, pruner=None):
         """Train for one epoch"""
         self.model.train()
         running_loss = 0.0
@@ -57,6 +57,10 @@ class Trainer:
             # Backward pass
             loss.backward()
             optimizer.step()
+            
+            # CRITICAL: Reapply mask after optimizer step to keep pruned weights at zero
+            if pruner is not None:
+                pruner.apply_masks()
             
             # Statistics
             running_loss += loss.item()
@@ -93,7 +97,7 @@ class Trainer:
         
         return avg_loss, accuracy
     
-    def train(self, num_iterations, learning_rate=0.0012, eval_every=100):
+    def train(self, num_iterations, learning_rate=0.0012, eval_every=100, pruner=None):
         """
         Train for specified number of iterations
         
@@ -101,6 +105,7 @@ class Trainer:
             num_iterations: Total training iterations (paper uses 50,000)
             learning_rate: Learning rate for Adam optimizer
             eval_every: Evaluate every N iterations
+            pruner: PruningManager to apply masks during training
         """
         # Setup optimizer
         optimizer = optim.Adam(self.model.parameters(), lr=learning_rate)
@@ -129,7 +134,7 @@ class Trainer:
             print(f"\nEpoch {epoch+1}/{num_epochs}")
             
             # Train one epoch
-            train_loss, train_acc = self.train_epoch(optimizer)
+            train_loss, train_acc = self.train_epoch(optimizer, pruner=pruner)
             iteration += len(self.train_loader)
             
             # Evaluate

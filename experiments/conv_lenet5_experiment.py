@@ -25,9 +25,11 @@ class ConvLeNet5Experiment(LotteryTicketExperiment):
         print(f"{'='*70}\n")
         
         # Load data
+        dataset_name = "Fashion-MNIST" if self.fashion else "MNIST"
+        print(f"Loading {dataset_name}...")
         train_loader, val_loader, test_loader = get_mnist_dataloaders(
             batch_size=self.batch_size,
-            fashion=True
+            fashion=self.fashion
         )
         
         # Create Conv model
@@ -54,7 +56,8 @@ class ConvLeNet5Experiment(LotteryTicketExperiment):
             trainer = Trainer(model, self.device, train_loader, val_loader, test_loader)
             train_results = trainer.train(
                 num_iterations=self.training_iterations,
-                learning_rate=self.learning_rate
+                learning_rate=self.learning_rate,
+                pruner=pruner
             )
             
             early_stop_iter = trainer.get_early_stopping_iteration()
