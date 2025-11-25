@@ -93,16 +93,43 @@ class RandomReinitExperiment(LotteryTicketExperiment):
                 print(f"\nRANDOM REINITIALIZATION (not resetting to θ₀)")
                 
                 # Reinitialize the model with NEW random weights
-                model = LeNet300100()
-                model.to(self.device)
-                
-                # Update pruner's model reference
-                pruner.model = model
-                
+                new_model = LeNet300100()
+                new_model.to(self.device)
+
+                # Transfer masks from the old pruner.model to the new model
+                old_model = pruner.model
+                old_modules = dict(old_model.named_modules())
+                new_modules = dict(new_model.named_modules())
+
+                for name, buffer_name in pruner.masks.items():
+                    # Resolve module for old and new models
+                    module_name, _, param_short = name.rpartition('.')
+                    old_module = old_modules[module_name] if module_name != '' else old_model
+                    new_module = new_modules[module_name] if module_name != '' else new_model
+
+                    # Get mask tensor from old module
+                    mask_tensor = getattr(old_module, buffer_name).clone()
+
+                    # Register the buffer on the new module
+                    if hasattr(new_module, buffer_name):
+                        setattr(new_module, buffer_name, mask_tensor)
+                    else:
+                        new_module.register_buffer(buffer_name, mask_tensor)
+
+                # Update pruner's model reference to the newly initialized model
+                pruner.model = new_model
+
                 # Apply the SAME mask to the new random weights
-                for name, param in model.named_parameters():
+                for name, param in new_model.named_parameters():
                     if name in pruner.masks:
-                        param.data *= pruner.masks[name].to(self.device)
+                        module_name, _, param_short = name.rpartition('.')
+                        module = new_modules[module_name] if module_name != '' else new_model
+                        buffer_name = pruner.masks[name]
+                        mask = getattr(module, buffer_name)
+                        param.data.mul_(mask)
+                
+                # Replace local model variable so training continues on the new model
+                model = new_model
             
             self.results['rounds'].append(round_results)
         
