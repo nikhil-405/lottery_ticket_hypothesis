@@ -9,6 +9,7 @@ class PruningManager:
     def __init__(self, model):
         self.model = model
         self.initial_state = None
+        # maps parameter full-name -> buffer name stored on module
         self.masks = {}
         
     def save_initial_weights(self):
@@ -25,11 +26,32 @@ class PruningManager:
         Mask convention: 1 = keep weight, 0 = pruned
         """
         self.masks = {}
+        # Create masks as buffers on the modules so they move with the model.device
+        modules = dict(self.model.named_modules())
+
         for name, param in self.model.named_parameters():
             # Prune both conv and fc weights, but not biases
             if 'weight' in name:
-                self.masks[name] = torch.ones_like(param.data).cpu()
-        
+                # Create mask on the same device/dtype as parameter
+                mask = torch.ones_like(param.data)
+
+                # Resolve module and parameter short-name
+                module_name, _, param_short = name.rpartition('.')
+                module = modules[module_name] if module_name != '' else self.model
+
+                # Buffer name for mask
+                buffer_name = f"{param_short}_mask"
+
+                # Register buffer on module (will be moved along with module.to(device))
+                # If already registered, overwrite attribute with new mask
+                if hasattr(module, buffer_name):
+                    setattr(module, buffer_name, mask)
+                else:
+                    module.register_buffer(buffer_name, mask)
+
+                # Keep mapping for quick lookup
+                self.masks[name] = buffer_name
+
         print(f"✓ Initialized masks for {len(self.masks)} weight tensors")
     
     def apply_masks(self):
@@ -37,11 +59,18 @@ class PruningManager:
         Apply current masks to model parameters (zero out pruned weights)
         """
         with torch.no_grad():
+            modules = dict(self.model.named_modules())
             for name, param in self.model.named_parameters():
                 if name in self.masks:
-                    # Move mask to same device as parameter
-                    mask = self.masks[name].to(param.device)
-                    param.data *= mask
+                    module_name, _, param_short = name.rpartition('.')
+                    module = modules[module_name] if module_name != '' else self.model
+                    buffer_name = self.masks[name]
+
+                    # Get mask buffer from module (already on same device as module/param)
+                    mask = getattr(module, buffer_name)
+
+                    # In-place multiply to zero out pruned weights
+                    param.data.mul_(mask)
     
     def prune_by_magnitude(self, pruning_rate, layer_wise=True):
         """
@@ -63,12 +92,14 @@ class PruningManager:
                 # Prune each layer separately
                 for name, param in self.model.named_parameters():
                     if name in self.masks:
-                        # Get device of parameter
-                        device = param.device
-                        
-                        # Move mask to device temporarily for computation
-                        mask = self.masks[name].to(device)
-                        
+                        modules = dict(self.model.named_modules())
+                        module_name, _, param_short = name.rpartition('.')
+                        module = modules[module_name] if module_name != '' else self.model
+                        buffer_name = self.masks[name]
+
+                        # Mask buffer is stored on the module and will be on same device as param
+                        mask = getattr(module, buffer_name)
+
                         # Get currently active (non-zero) weights
                         active_mask = (mask == 1)
                         active_weights = param.data[active_mask]
@@ -92,12 +123,12 @@ class PruningManager:
                             
                             # Update mask: prune weights below or equal to threshold
                             new_mask = (param.data.abs() > threshold).float()
-                            
+
                             # Combine with existing mask (once pruned, stays pruned)
                             combined_mask = torch.min(mask, new_mask)
-                            
-                            # Store mask back on CPU
-                            self.masks[name] = combined_mask.cpu()
+
+                            # Store back into module buffer (keep on same device)
+                            setattr(module, buffer_name, combined_mask)
             
             else:
                 # Global pruning across all layers
@@ -106,8 +137,11 @@ class PruningManager:
                 
                 for name, param in self.model.named_parameters():
                     if name in self.masks:
-                        device = param.device
-                        mask = self.masks[name].to(device)
+                        modules = dict(self.model.named_modules())
+                        module_name, _, param_short = name.rpartition('.')
+                        module = modules[module_name] if module_name != '' else self.model
+                        buffer_name = self.masks[name]
+                        mask = getattr(module, buffer_name)
                         active_weights = param.data[mask == 1]
                         all_weights.append(active_weights.flatten())
                         all_names.append(name)
@@ -127,10 +161,14 @@ class PruningManager:
                         for name, param in self.model.named_parameters():
                             if name in self.masks:
                                 device = param.device
-                                mask = self.masks[name].to(device)
+                                modules = dict(self.model.named_modules())
+                                module_name, _, param_short = name.rpartition('.')
+                                module = modules[module_name] if module_name != '' else self.model
+                                buffer_name = self.masks[name]
+                                mask = getattr(module, buffer_name)
                                 new_mask = (param.data.abs() > threshold).float()
                                 combined_mask = torch.min(mask, new_mask)
-                                self.masks[name] = combined_mask.cpu()
+                                setattr(module, buffer_name, combined_mask)
             
             # Apply masks
             self.apply_masks()
@@ -152,8 +190,10 @@ class PruningManager:
             device = next(self.model.parameters()).device
             
             # Load initial weights to the correct device
+            # Note: load with strict=False because mask buffers are registered now
+            # but weren't present when initial_state was saved
             initial_state_device = {k: v.to(device) for k, v in self.initial_state.items()}
-            self.model.load_state_dict(initial_state_device)
+            self.model.load_state_dict(initial_state_device, strict=False)
             
             # Re-apply masks (zero out pruned weights)
             self.apply_masks()
@@ -164,8 +204,13 @@ class PruningManager:
         """Calculate current sparsity percentage"""
         total_params = 0
         pruned_params = 0
-        
-        for name, mask in self.masks.items():
+        modules = dict(self.model.named_modules())
+
+        for name, buffer_name in self.masks.items():
+            module_name, _, param_short = name.rpartition('.')
+            module = modules[module_name] if module_name != '' else self.model
+            mask = getattr(module, buffer_name)
+
             total_params += mask.numel()
             pruned_params += (mask == 0).sum().item()
         
@@ -181,17 +226,30 @@ class PruningManager:
         print(f"\n{'='*60}")
         print("Pruning Statistics:")
         print(f"{'='*60}")
-        
-        for name, mask in self.masks.items():
+        modules = dict(self.model.named_modules())
+
+        for name, buffer_name in self.masks.items():
+            module_name, _, param_short = name.rpartition('.')
+            module = modules[module_name] if module_name != '' else self.model
+            mask = getattr(module, buffer_name)
+
             total = mask.numel()
             remaining = (mask == 1).sum().item()
             pruned = total - remaining
             remaining_pct = 100.0 * remaining / total
-            
+
             print(f"  {name:20s}: {remaining:6d}/{total:6d} ({remaining_pct:5.1f}% remaining)")
-        
-        total_params = sum(mask.numel() for mask in self.masks.values())
-        total_remaining = sum((mask == 1).sum().item() for mask in self.masks.values())
+
+        # Simpler/robust overall counts by summing masks directly
+        total_params = 0
+        total_remaining = 0
+        for name, buffer_name in self.masks.items():
+            module_name, _, param_short = name.rpartition('.')
+            module = modules[module_name] if module_name != '' else self.model
+            mask = getattr(module, buffer_name)
+            total_params += mask.numel()
+            total_remaining += (mask == 1).sum().item()
+
         overall_sparsity = self.get_sparsity()
         
         print(f"{'='*60}")
